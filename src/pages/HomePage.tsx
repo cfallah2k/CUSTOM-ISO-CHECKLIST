@@ -40,9 +40,9 @@ const HomePage: React.FC = () => {
     return (
       <>
         <Helmet>
-          <title>AU ISO Fellowship Platform - African Union EAN Fellowship Program</title>
-          <meta name="description" content="Comprehensive ISO standards guidance for African professionals across all sectors. Join the African Union EAN Fellowship Program to advance your career and contribute to Africa's development." />
-          <meta name="keywords" content="ISO standards, African Union, EAN Fellowship, quality management, environmental management, information security, occupational health and safety, Africa, professional development" />
+          <title>AU ISO Assessment Platform - African Union ISO Standards Evaluation</title>
+          <meta name="description" content="Comprehensive ISO standards assessment platform for African Union fellows. Evaluate which ISO standards match your business needs and get implementation guidance." />
+          <meta name="keywords" content="ISO standards, African Union, assessment, evaluation, quality management, environmental management, information security, business compliance" />
         </Helmet>
 
         <div className="min-h-screen">
@@ -66,10 +66,10 @@ const HomePage: React.FC = () => {
                 className="text-center mb-16"
               >
                 <motion.h2 variants={itemVariants} className="text-4xl font-bold text-gray-900 mb-4">
-                  How It Works
+                  How the Assessment Works
                 </motion.h2>
                 <motion.p variants={itemVariants} className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Our comprehensive platform guides you through every step of ISO implementation, from initial assessment to certification.
+                  Our comprehensive assessment helps AU fellows identify the most relevant ISO standards for their business needs.
                 </motion.p>
               </motion.div>
 
@@ -77,26 +77,26 @@ const HomePage: React.FC = () => {
                 {[
                   {
                     step: '01',
-                    title: 'Assess Your Needs',
-                    description: 'Take our comprehensive assessment to identify which ISO standards are most relevant to your sector and organization.',
+                    title: 'Business Analysis',
+                    description: 'Answer questions about your business sector, size, and current operations to understand your needs.',
                     icon: ChartBarIcon,
                   },
                   {
                     step: '02',
-                    title: 'Learn & Plan',
-                    description: 'Access detailed guides, templates, and resources to understand implementation requirements and create your roadmap.',
+                    title: 'Standard Matching',
+                    description: 'Our algorithm matches your business profile with the most relevant ISO standards.',
                     icon: AcademicCapIcon,
                   },
                   {
                     step: '03',
-                    title: 'Implement & Monitor',
-                    description: 'Follow step-by-step implementation guides with progress tracking and milestone monitoring.',
+                    title: 'Implementation Guide',
+                    description: 'Get detailed implementation steps, costs, and timeline for each recommended standard.',
                     icon: ShieldCheckIcon,
                   },
                   {
                     step: '04',
-                    title: 'Certify & Maintain',
-                    description: 'Navigate the certification process and learn how to maintain compliance for long-term success.',
+                    title: 'Action Plan',
+                    description: 'Receive a customized action plan with priorities and next steps for implementation.',
                     icon: LightBulbIcon,
                   },
                 ].map((item, index) => (
@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
             </div>
           </section>
 
-          {/* Testimonials Section */}
+          {/* Success Stories Section */}
           <section className="section-padding bg-gray-50">
             <div className="container-custom">
               <motion.div
@@ -132,39 +132,39 @@ const HomePage: React.FC = () => {
                 className="text-center mb-16"
               >
                 <motion.h2 variants={itemVariants} className="text-4xl font-bold text-gray-900 mb-4">
-                  Success Stories
+                  Fellow Success Stories
                 </motion.h2>
                 <motion.p variants={itemVariants} className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Hear from African professionals who have successfully implemented ISO standards in their organizations.
+                  See how other AU fellows have used our assessment to identify and implement the right ISO standards.
                 </motion.p>
               </motion.div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
                   {
-                    name: 'Dr. Sarah Mwangi',
-                    role: 'Quality Manager',
+                    name: 'Sarah Mwangi',
+                    role: 'Business Owner',
                     company: 'Kenya Tea Development Agency',
                     country: 'Kenya',
-                    testimonial: 'The AU ISO Fellowship platform provided comprehensive guidance that helped us achieve ISO 9001 certification in just 8 months. The African context made all the difference.',
+                    testimonial: 'The assessment helped me identify that ISO 9001 was perfect for our quality management needs. The implementation guide was invaluable.',
                     achievement: 'ISO 9001 Certified',
                     photo: '/testimonials/sarah-mwangi.jpg',
                   },
                   {
                     name: 'Emmanuel Osei',
-                    role: 'Environmental Officer',
+                    role: 'Operations Manager',
                     company: 'Ghana Cocoa Board',
                     country: 'Ghana',
-                    testimonial: 'Implementing ISO 14001 was challenging, but the platform\'s step-by-step guidance and local resources made it achievable. Our environmental impact has improved significantly.',
+                    testimonial: 'Through the assessment, I discovered ISO 14001 was essential for our environmental compliance. The step-by-step guidance made implementation smooth.',
                     achievement: 'ISO 14001 Certified',
                     photo: '/testimonials/emmanuel-osei.jpg',
                   },
                   {
                     name: 'Fatima Hassan',
-                    role: 'IT Security Manager',
+                    role: 'IT Director',
                     company: 'Nigerian Banking Corporation',
                     country: 'Nigeria',
-                    testimonial: 'The ISO 27001 implementation guide was invaluable. We now have robust information security practices that meet international standards while being cost-effective.',
+                    testimonial: 'The assessment recommended ISO 27001 for our information security needs. The detailed cost breakdown helped with budgeting.',
                     achievement: 'ISO 27001 Certified',
                     photo: '/testimonials/fatima-hassan.jpg',
                   },
@@ -210,7 +210,7 @@ const HomePage: React.FC = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">
-            Welcome to AU ISO Fellowship Platform
+            Welcome to AU ISO Assessment Platform
           </h1>
           <p className="text-gray-600 mb-4">
             We're experiencing some technical difficulties. Please try refreshing the page.

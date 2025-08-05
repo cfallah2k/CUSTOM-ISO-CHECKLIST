@@ -14,7 +14,6 @@ import HomePage from './pages/HomePage';
 import StandardsPage from './pages/StandardsPage';
 import StandardDetailPage from './pages/StandardDetailPage';
 import SectorsPage from './pages/SectorsPage';
-import FellowshipPage from './pages/FellowshipPage';
 import AssessmentPage from './pages/AssessmentPage';
 import ResourcesPage from './pages/ResourcesPage';
 import AboutPage from './pages/AboutPage';
@@ -150,7 +149,6 @@ function App() {
                         <Route path="/standards" element={<StandardsPage />} />
                         <Route path="/standards/:id" element={<StandardDetailPage />} />
                         <Route path="/sectors" element={<SectorsPage />} />
-                        <Route path="/fellowship" element={<FellowshipPage />} />
                         <Route path="/assessment" element={<AssessmentPage />} />
                         <Route path="/resources" element={<ResourcesPage />} />
                         <Route path="/about" element={<AboutPage />} />
