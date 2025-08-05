@@ -15,9 +15,9 @@ const StatisticsSection: React.FC = () => {
   const isInView = useInView(ref, { once: true });
   const [counts, setCounts] = useState({
     professionals: 0,
-    countries: 0,
+    africancountries: 0,
     certifications: 0,
-    standards: 0,
+    isostandards: 0,
     organizations: 0,
     resources: 0,
   });
@@ -76,9 +76,9 @@ const StatisticsSection: React.FC = () => {
       const timer = setInterval(() => {
         setCounts(prev => ({
           professionals: Math.min(prev.professionals + Math.ceil(15420 / steps), 15420),
-          countries: Math.min(prev.countries + Math.ceil(54 / steps), 54),
+          africancountries: Math.min(prev.africancountries + Math.ceil(54 / steps), 54),
           certifications: Math.min(prev.certifications + Math.ceil(3247 / steps), 3247),
-          standards: Math.min(prev.standards + Math.ceil(50 / steps), 50),
+          isostandards: Math.min(prev.isostandards + Math.ceil(50 / steps), 50),
           organizations: Math.min(prev.organizations + Math.ceil(892 / steps), 892),
           resources: Math.min(prev.resources + Math.ceil(1250 / steps), 1250),
         }));
@@ -141,7 +141,11 @@ const StatisticsSection: React.FC = () => {
                 <stat.icon className="h-8 w-8 text-white" />
               </div>
               <div className="text-3xl lg:text-4xl font-bold mb-2">
-                {counts[stat.label.toLowerCase().replace(/\s+/g, '') as keyof typeof counts].toLocaleString()}
+                {(() => {
+                  const key = stat.label.toLowerCase().replace(/\s+/g, '') as keyof typeof counts;
+                  const value = counts[key];
+                  return value !== undefined ? value.toLocaleString() : '0';
+                })()}
                 {stat.suffix}
               </div>
               <div className="text-gray-300 font-medium">{stat.label}</div>
