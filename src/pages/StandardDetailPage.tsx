@@ -161,7 +161,7 @@ const StandardDetailPage: React.FC = () => {
                     Implementation Steps
                   </h3>
                   <div className="space-y-4">
-                    {standard.implementation.map((step, index) => (
+                    {standard.implementation.map((step: any, index: number) => (
                       <div key={index} className="flex items-start space-x-4">
                         <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
                           {index + 1}

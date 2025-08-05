@@ -23,7 +23,7 @@ const StandardsPage: React.FC = () => {
                            standard.code.toLowerCase().includes(searchTerm.toLowerCase());
       
       const matchesCategory = selectedCategory === 'all' || standard.category.id === selectedCategory;
-      const matchesSector = selectedSector === 'all' || standard.sector.some(s => s.id === selectedSector);
+      const matchesSector = selectedSector === 'all' || standard.sector.some((s: any) => s.id === selectedSector);
       
       return matchesSearch && matchesCategory && matchesSector;
     });
@@ -174,7 +174,7 @@ const StandardsPage: React.FC = () => {
                     </span>
                   </div>
                   <div className="flex flex-wrap gap-1">
-                    {standard.sector.slice(0, 3).map((sector) => (
+                    {standard.sector.slice(0, 3).map((sector: any) => (
                       <span key={sector.id} className="badge-secondary text-xs">
                         {sector.name}
                       </span>
