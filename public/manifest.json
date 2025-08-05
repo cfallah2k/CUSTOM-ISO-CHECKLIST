@@ -1,0 +1,10 @@
+{
+  "short_name": "AU ISO Fellowship",
+  "name": "AU ISO Fellowship Platform - African Union EAN Fellowship Program",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0ea5e9",
+  "background_color": "#ffffff",
+  "description": "Comprehensive ISO standards guidance for African professionals across all sectors"
+} 

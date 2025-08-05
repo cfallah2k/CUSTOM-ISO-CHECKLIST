@@ -84,7 +84,7 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public
+# public directory is needed for React build
 
 # Storybook build outputs
 .out
