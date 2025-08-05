@@ -1,4 +1,4 @@
-import { QuizQuestion, AssessmentResult } from '@/types/iso';
+import { QuizQuestion, AssessmentResult } from '../types/iso';
 
 export const assessmentQuestions: QuizQuestion[] = [
   // ISO 9001 Assessment Questions

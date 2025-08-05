@@ -1,4 +1,5 @@
-import { ISOStandard, ISOCategory } from '@/types/iso';
+import { ISOStandard, ISOCategory } from '../types/iso';
+import { sectors } from './sectors';
 
 export const isoCategories: ISOCategory[] = [
   {
@@ -54,7 +55,7 @@ export const isoStandards: ISOStandard[] = [
     version: '2015',
     year: 2015,
     category: isoCategories[0],
-    sector: ['Manufacturing', 'Technology', 'Healthcare', 'Financial Services', 'Agriculture'],
+    sector: [sectors[0], sectors[2], sectors[1], sectors[3], sectors[4]], // Manufacturing, Technology, Healthcare, Financial Services, Agriculture
     description: 'ISO 9001 is the international standard for quality management systems (QMS). It provides a framework for organizations to ensure they meet customer and regulatory requirements while continuously improving their processes.',
     overview: 'ISO 9001 is the most widely used quality management standard in the world, with over 1 million organizations certified globally. It provides a systematic approach to managing business processes to ensure consistent quality and customer satisfaction.',
     purpose: 'To help organizations ensure they meet customer and other stakeholder needs within statutory and regulatory requirements related to a product or service.',

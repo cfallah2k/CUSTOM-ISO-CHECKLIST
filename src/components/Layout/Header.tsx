@@ -11,8 +11,8 @@ import {
   MoonIcon,
   ComputerDesktopIcon
 } from '@heroicons/react/24/outline';
-import { useTheme } from '@/context/ThemeContext';
-import { useUser } from '@/context/UserContext';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,9 +98,11 @@ const Header: React.FC = () => {
                 ))}
               </select>
               <div className="absolute right-0 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                {themeOptions.find(opt => opt.value === theme)?.icon && (
-                  <themeOptions.find(opt => opt.value === theme)!.icon className="h-4 w-4" />
-                )}
+                {(() => {
+                  const currentTheme = themeOptions.find(opt => opt.value === theme);
+                  const IconComponent = currentTheme?.icon;
+                  return IconComponent ? <IconComponent className="h-4 w-4" /> : null;
+                })()}
               </div>
             </div>
 

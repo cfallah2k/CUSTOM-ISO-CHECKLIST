@@ -1,4 +1,4 @@
-import { Resource } from '@/types/iso';
+import { Resource } from '../types/iso';
 
 export const resources: Resource[] = [
   // ISO 9001 Resources

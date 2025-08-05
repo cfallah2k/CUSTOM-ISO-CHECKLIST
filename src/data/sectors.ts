@@ -1,4 +1,4 @@
-import { Sector } from '@/types/iso';
+import { Sector } from '../types/iso';
 
 export const sectors: Sector[] = [
   {

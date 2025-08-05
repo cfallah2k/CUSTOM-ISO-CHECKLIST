@@ -86,6 +86,7 @@ const StatisticsSection: React.FC = () => {
 
       return () => clearInterval(timer);
     }
+    return undefined;
   }, [isInView]);
 
   const containerVariants = {

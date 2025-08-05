@@ -1,21 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { 
   ChartBarIcon,
-  GlobeAltIcon,
   AcademicCapIcon,
-  UserGroupIcon,
   ShieldCheckIcon,
-  LightBulbIcon,
-  ArrowRightIcon,
-  PlayIcon
+  LightBulbIcon
 } from '@heroicons/react/24/outline';
-import HeroSection from '@/components/Home/HeroSection';
-import FeaturesSection from '@/components/Home/FeaturesSection';
-import StatisticsSection from '@/components/Home/StatisticsSection';
-import CTASection from '@/components/Home/CTASection';
+import HeroSection from '../components/Home/HeroSection';
+import FeaturesSection from '../components/Home/FeaturesSection';
+import StatisticsSection from '../components/Home/StatisticsSection';
+import CTASection from '../components/Home/CTASection';
 
 const HomePage: React.FC = () => {
   const containerVariants = {

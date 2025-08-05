@@ -5,25 +5,25 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from 'react-hot-toast';
 
 // Components
-import Layout from '@/components/Layout/Layout';
-import Header from '@/components/Layout/Header';
-import Footer from '@/components/Layout/Footer';
+import Layout from './components/Layout/Layout';
+import Header from './components/Layout/Header';
+import Footer from './components/Layout/Footer';
 
 // Pages
-import HomePage from '@/pages/HomePage';
-import StandardsPage from '@/pages/StandardsPage';
-import StandardDetailPage from '@/pages/StandardDetailPage';
-import SectorsPage from '@/pages/SectorsPage';
-import FellowshipPage from '@/pages/FellowshipPage';
-import AssessmentPage from '@/pages/AssessmentPage';
-import ResourcesPage from '@/pages/ResourcesPage';
-import AboutPage from '@/pages/AboutPage';
-import ContactPage from '@/pages/ContactPage';
-import NotFoundPage from '@/pages/NotFoundPage';
+import HomePage from './pages/HomePage';
+import StandardsPage from './pages/StandardsPage';
+import StandardDetailPage from './pages/StandardDetailPage';
+import SectorsPage from './pages/SectorsPage';
+import FellowshipPage from './pages/FellowshipPage';
+import AssessmentPage from './pages/AssessmentPage';
+import ResourcesPage from './pages/ResourcesPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 // Context
-import { ThemeProvider } from '@/context/ThemeContext';
-import { UserProvider } from '@/context/UserContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { UserProvider } from './context/UserContext';
 
 // Styles
 import './index.css';
