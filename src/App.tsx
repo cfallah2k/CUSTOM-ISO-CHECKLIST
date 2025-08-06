@@ -97,12 +97,12 @@ class ErrorBoundary extends React.Component<
 
 // Loading Component
 const LoadingScreen: React.FC = () => (
-  <div className="min-h-screen bg-gradient-to-br from-primary-600 via-secondary-600 to-accent-600 flex items-center justify-center">
+  <div className="min-h-screen bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 flex items-center justify-center">
     <div className="text-center text-white">
       <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
         <span className="text-white font-bold text-xl">AU</span>
       </div>
-      <h1 className="text-2xl font-bold mb-2">AU ISO Fellowship Platform</h1>
+      <h1 className="text-2xl font-bold mb-2">AU ISO Assessment Platform</h1>
       <p className="text-white/80">Loading...</p>
       <div className="mt-4">
         <div className="w-8 h-8 border-2 border-white/30 border-t-white rounded-full animate-spin mx-auto"></div>

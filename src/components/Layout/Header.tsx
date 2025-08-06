@@ -2,30 +2,38 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Bars3Icon,
+  Bars3Icon, 
   XMarkIcon,
-  GlobeAltIcon
+  GlobeAltIcon,
+  SunIcon,
+  MoonIcon
 } from '@heroicons/react/24/outline';
 import { useTheme } from '../../context/ThemeContext';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
   const { theme, setTheme } = useTheme();
+  const location = useLocation();
 
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Standards', href: '/standards' },
+    { name: 'Sectors', href: '/sectors' },
     { name: 'Assessment', href: '/assessment' },
     { name: 'Resources', href: '/resources' },
-    { name: 'Sectors', href: '/sectors' },
     { name: 'About', href: '/about' },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -61,9 +69,14 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={toggleTheme}
-              className="p-2 text-gray-600 hover:text-primary-600 transition-colors duration-200"
+              className="p-2 text-gray-600 hover:text-primary-600 transition-colors duration-200 rounded-lg hover:bg-gray-100"
+              aria-label="Toggle theme"
             >
-              {theme === 'dark' ? '🌞' : '🌙'}
+              {theme === 'dark' ? (
+                <SunIcon className="h-5 w-5" />
+              ) : (
+                <MoonIcon className="h-5 w-5" />
+              )}
             </button>
             <Link
               to="/assessment"
@@ -74,16 +87,30 @@ const Header: React.FC = () => {
           </div>
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-gray-600 hover:text-primary-600 transition-colors duration-200"
-          >
-            {isMobileMenuOpen ? (
-              <XMarkIcon className="h-6 w-6" />
-            ) : (
-              <Bars3Icon className="h-6 w-6" />
-            )}
-          </button>
+          <div className="md:hidden flex items-center space-x-2">
+            <button
+              onClick={toggleTheme}
+              className="p-2 text-gray-600 hover:text-primary-600 transition-colors duration-200 rounded-lg hover:bg-gray-100"
+              aria-label="Toggle theme"
+            >
+              {theme === 'dark' ? (
+                <SunIcon className="h-5 w-5" />
+              ) : (
+                <MoonIcon className="h-5 w-5" />
+              )}
+            </button>
+            <button
+              onClick={toggleMobileMenu}
+              className="p-2 text-gray-600 hover:text-primary-600 transition-colors duration-200 rounded-lg hover:bg-gray-100"
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <XMarkIcon className="h-6 w-6" />
+              ) : (
+                <Bars3Icon className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -111,22 +138,14 @@ const Header: React.FC = () => {
                     {item.name}
                   </Link>
                 ))}
-                <div className="pt-4 pb-2 border-t border-gray-200">
-                  <div className="flex items-center justify-between px-3">
-                    <button
-                      onClick={toggleTheme}
-                      className="p-2 text-gray-600 hover:text-primary-600 transition-colors duration-200"
-                    >
-                      {theme === 'dark' ? '🌞' : '🌙'}
-                    </button>
-                    <Link
-                      to="/assessment"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="btn-primary text-sm px-4 py-2"
-                    >
-                      Start Assessment
-                    </Link>
-                  </div>
+                <div className="pt-4 pb-2">
+                  <Link
+                    to="/assessment"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="btn-primary w-full text-center"
+                  >
+                    Start Assessment
+                  </Link>
                 </div>
               </div>
             </motion.div>
