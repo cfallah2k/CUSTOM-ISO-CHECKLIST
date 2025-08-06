@@ -1351,9 +1351,39 @@ export const isoStandards: ISOStandard[] = [
           'Stakeholder analysis documents'
         ],
         resources: [
-          'Business continuity policy templates',
-          'Stakeholder analysis tools',
-          'Leadership commitment guidelines'
+          {
+            id: 'bc-policy-templates',
+            title: 'Business Continuity Policy Templates',
+            type: 'template',
+            description: 'Templates for business continuity policies and procedures',
+            url: '/resources/bc-policy-templates.zip',
+            size: '2.1 MB',
+            duration: '2 hours',
+            language: 'English',
+            tags: ['template', 'policy', 'business continuity']
+          },
+          {
+            id: 'stakeholder-analysis-tools',
+            title: 'Stakeholder Analysis Tools',
+            type: 'tool',
+            description: 'Tools for conducting stakeholder analysis',
+            url: '/resources/stakeholder-analysis-tools.xlsx',
+            size: '1.8 MB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['tool', 'stakeholder analysis', 'planning']
+          },
+          {
+            id: 'leadership-commitment-guidelines',
+            title: 'Leadership Commitment Guidelines',
+            type: 'guide',
+            description: 'Guidelines for securing leadership commitment',
+            url: '/resources/leadership-commitment-guidelines.pdf',
+            size: '1.2 MB',
+            duration: '30 minutes',
+            language: 'English',
+            tags: ['guide', 'leadership', 'commitment']
+          }
         ]
       }
     ],
@@ -1363,7 +1393,41 @@ export const isoStandards: ISOStandard[] = [
         title: 'Business Impact Analysis',
         description: 'Conduct comprehensive business impact analysis',
         duration: '2-3 months',
-        resources: ['BC consultants', 'Impact analysis tools', 'Stakeholder input'],
+        resources: [
+          {
+            id: 'bc-consultants',
+            title: 'BC Consultants Directory',
+            type: 'guide',
+            description: 'Directory of business continuity consultants',
+            url: '/resources/bc-consultants-directory.pdf',
+            size: '1.5 MB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['guide', 'consultants', 'business continuity']
+          },
+          {
+            id: 'impact-analysis-tools',
+            title: 'Impact Analysis Tools',
+            type: 'tool',
+            description: 'Tools for conducting business impact analysis',
+            url: '/resources/impact-analysis-tools.xlsx',
+            size: '2.3 MB',
+            duration: '2 hours',
+            language: 'English',
+            tags: ['tool', 'impact analysis', 'assessment']
+          },
+          {
+            id: 'stakeholder-input-template',
+            title: 'Stakeholder Input Template',
+            type: 'template',
+            description: 'Template for collecting stakeholder input',
+            url: '/resources/stakeholder-input-template.docx',
+            size: '890 KB',
+            duration: '30 minutes',
+            language: 'English',
+            tags: ['template', 'stakeholder', 'input']
+          }
+        ],
         checklist: [
           'Identify critical business functions',
           'Assess impact of disruptions',
@@ -1382,7 +1446,41 @@ export const isoStandards: ISOStandard[] = [
         title: 'Risk Assessment',
         description: 'Conduct risk assessment for business continuity',
         duration: '1-2 months',
-        resources: ['Risk assessment tools', 'Expert input', 'Historical data'],
+        resources: [
+          {
+            id: 'risk-assessment-tools',
+            title: 'Risk Assessment Tools',
+            type: 'tool',
+            description: 'Tools for conducting risk assessments',
+            url: '/resources/risk-assessment-tools.xlsx',
+            size: '1.9 MB',
+            duration: '1.5 hours',
+            language: 'English',
+            tags: ['tool', 'risk assessment', 'analysis']
+          },
+          {
+            id: 'expert-input-template',
+            title: 'Expert Input Template',
+            type: 'template',
+            description: 'Template for collecting expert input',
+            url: '/resources/expert-input-template.docx',
+            size: '750 KB',
+            duration: '45 minutes',
+            language: 'English',
+            tags: ['template', 'expert', 'input']
+          },
+          {
+            id: 'historical-data-guide',
+            title: 'Historical Data Analysis Guide',
+            type: 'guide',
+            description: 'Guide for analyzing historical data',
+            url: '/resources/historical-data-guide.pdf',
+            size: '1.3 MB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['guide', 'historical data', 'analysis']
+          }
+        ],
         checklist: [
           'Identify potential threats',
           'Assess likelihood and impact',
