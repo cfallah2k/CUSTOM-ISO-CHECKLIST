@@ -195,8 +195,8 @@ const SectorsPage: React.FC = () => {
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Each sector has unique challenges and opportunities. Our tailored guidance helps organizations implement ISO standards effectively.
-              </p>
-            </div>
+                </p>
+              </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[

@@ -55,10 +55,10 @@ export const isoStandards: ISOStandard[] = [
     version: '2015',
     year: 2015,
     category: isoCategories[0],
-    sector: [sectors[0], sectors[2], sectors[1], sectors[3], sectors[4]], // Manufacturing, Technology, Healthcare, Financial Services, Agriculture
+    sector: [sectors[0], sectors[2], sectors[1], sectors[3], sectors[4]],
     description: 'ISO 9001 is the international standard for quality management systems (QMS). It provides a framework for organizations to ensure they meet customer and regulatory requirements while continuously improving their processes.',
-    overview: 'ISO 9001 is the most widely used quality management standard in the world, with over 1 million organizations certified globally. It provides a systematic approach to managing business processes to ensure consistent quality and customer satisfaction.',
-    purpose: 'To help organizations ensure they meet customer and other stakeholder needs within statutory and regulatory requirements related to a product or service.',
+    overview: 'ISO 9001 is the most widely used quality management standard in the world, with over 1 million organizations certified globally.',
+    purpose: 'To help organizations ensure they meet customer and other stakeholder needs within statutory and regulatory requirements.',
     scope: 'This International Standard specifies requirements for a quality management system when an organization needs to demonstrate its ability to consistently provide products and services that meet customer and applicable statutory and regulatory requirements.',
     keyPrinciples: [
       'Customer focus',
@@ -98,282 +98,123 @@ export const isoStandards: ISOStandard[] = [
           'Maintaining leadership commitment',
           'Ensuring policy alignment'
         ],
-        cost: '$5,000 - $15,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'planning',
-        title: 'Planning',
-        description: 'Addressing risks and opportunities, quality objectives, and changes to the quality management system.',
-        requirements: [
-          'Identify risks and opportunities',
-          'Plan actions to address risks and opportunities',
-          'Establish quality objectives',
-          'Plan changes to the QMS'
+        examples: [
+          'Quality policy statement',
+          'Organizational chart',
+          'Job descriptions',
+          'Stakeholder register'
         ],
-        implementation: [
-          'Conduct risk assessment workshops',
-          'Develop risk mitigation strategies',
-          'Set SMART quality objectives',
-          'Create change management procedures'
-        ],
-        benefits: [
-          'Proactive risk management',
-          'Clear improvement targets',
-          'Better change control',
-          'Enhanced strategic planning'
-        ],
-        challenges: [
-          'Identifying all potential risks',
-          'Setting realistic objectives',
-          'Managing change resistance',
-          'Balancing risks and opportunities'
-        ],
-        cost: '$3,000 - $10,000',
-        timeline: '1-2 months'
-      },
-      {
-        id: 'support',
-        title: 'Support',
-        description: 'Resources, competence, awareness, communication, and documented information.',
-        requirements: [
-          'Determine and provide necessary resources',
-          'Ensure competence of persons',
-          'Raise awareness of quality policy',
-          'Control documented information'
-        ],
-        implementation: [
-          'Conduct resource gap analysis',
-          'Develop training programs',
-          'Create communication plans',
-          'Establish document control system'
-        ],
-        benefits: [
-          'Improved employee competence',
-          'Better resource utilization',
-          'Enhanced communication',
-          'Controlled information flow'
-        ],
-        challenges: [
-          'Identifying training needs',
-          'Managing document versions',
-          'Ensuring resource availability',
-          'Maintaining awareness levels'
-        ],
-        cost: '$8,000 - $25,000',
-        timeline: '3-4 months'
-      },
-      {
-        id: 'operation',
-        title: 'Operation',
-        description: 'Operational planning and control, requirements for products and services, design and development, control of externally provided processes, products and services, production and service provision, release of products and services, control of nonconforming outputs.',
-        requirements: [
-          'Plan and control operations',
-          'Determine product requirements',
-          'Control design and development',
-          'Control external providers'
-        ],
-        implementation: [
-          'Develop operational procedures',
-          'Create product specifications',
-          'Establish design controls',
-          'Implement supplier management'
-        ],
-        benefits: [
-          'Consistent operations',
-          'Reduced errors',
-          'Better supplier control',
-          'Improved product quality'
-        ],
-        challenges: [
-          'Documenting all processes',
-          'Managing supplier relationships',
-          'Controlling design changes',
-          'Ensuring operational consistency'
-        ],
-        cost: '$15,000 - $40,000',
-        timeline: '4-6 months'
-      },
-      {
-        id: 'performance-evaluation',
-        title: 'Performance Evaluation',
-        description: 'Monitoring, measurement, analysis and evaluation, internal audit, management review.',
-        requirements: [
-          'Monitor and measure processes',
-          'Analyze and evaluate data',
-          'Conduct internal audits',
-          'Perform management reviews'
-        ],
-        implementation: [
-          'Establish monitoring systems',
-          'Create data analysis procedures',
-          'Develop audit program',
-          'Schedule management reviews'
-        ],
-        benefits: [
-          'Data-driven decisions',
-          'Continuous improvement',
-          'Better performance tracking',
-          'Enhanced management oversight'
-        ],
-        challenges: [
-          'Selecting appropriate metrics',
-          'Ensuring audit independence',
-          'Maintaining data accuracy',
-          'Scheduling regular reviews'
-        ],
-        cost: '$5,000 - $15,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'improvement',
-        title: 'Improvement',
-        description: 'Nonconformity and corrective action, continual improvement.',
-        requirements: [
-          'React to nonconformities',
-          'Take corrective actions',
-          'Continually improve the QMS',
-          'Update risks and opportunities'
-        ],
-        implementation: [
-          'Establish nonconformity procedures',
-          'Create corrective action system',
-          'Implement improvement processes',
-          'Review and update plans'
-        ],
-        benefits: [
-          'Reduced nonconformities',
-          'Systematic improvements',
-          'Better problem-solving',
-          'Enhanced customer satisfaction'
-        ],
-        challenges: [
-          'Root cause analysis',
-          'Implementing corrective actions',
-          'Measuring improvements',
-          'Maintaining momentum'
-        ],
-        cost: '$3,000 - $10,000',
-        timeline: 'Ongoing'
+        resources: []
       }
+    ],
+    requirements: [
+      'Establish quality management system',
+      'Define quality policy and objectives',
+      'Implement process approach',
+      'Ensure customer focus',
+      'Maintain continual improvement'
     ],
     benefits: [
       'Improved customer satisfaction',
       'Enhanced process efficiency',
       'Better risk management',
       'Increased market access',
-      'Reduced costs through waste elimination',
-      'Improved employee morale',
-      'Enhanced supplier relationships',
-      'Better decision-making through data analysis'
-    ],
-    challenges: [
-      'Initial implementation costs',
-      'Time commitment for documentation',
-      'Employee resistance to change',
-      'Maintaining momentum over time',
-      'Ensuring top management commitment',
-      'Balancing documentation with practicality',
-      'Managing audit findings',
-      'Keeping the system current'
+      'Reduced costs through waste elimination'
     ],
     implementation: [
       {
+        id: 'gap-analysis',
         title: 'Gap Analysis',
-        description: 'Assess current processes against ISO 9001 requirements'
+        description: 'Assess current processes against ISO 9001 requirements',
+        duration: '2-3 weeks',
+        resources: [],
+        checklist: [
+          'Review current quality processes',
+          'Identify gaps against ISO 9001 requirements',
+          'Document findings and recommendations',
+          'Prioritize improvement areas'
+        ],
+        tips: [
+          'Involve key stakeholders in the analysis',
+          'Use a systematic approach to review processes',
+          'Document all findings thoroughly',
+          'Focus on high-impact improvements first'
+        ]
       },
       {
+        id: 'documentation-development',
         title: 'Documentation Development',
-        description: 'Create quality manual, procedures, and work instructions'
-      },
-      {
-        title: 'Employee Training',
-        description: 'Train staff on quality management principles and procedures'
-      },
-      {
-        title: 'Process Implementation',
-        description: 'Implement documented processes and procedures'
-      },
-      {
-        title: 'Internal Auditing',
-        description: 'Conduct internal audits to verify system effectiveness'
-      },
-      {
-        title: 'Management Review',
-        description: 'Regular management reviews to ensure system suitability'
-      },
-      {
-        title: 'Corrective Actions',
-        description: 'Address nonconformities and implement improvements'
-      },
-      {
-        title: 'Certification Audit',
-        description: 'External audit by certification body'
-      }
-    ],
-    resources: [
-      {
-        id: 'iso-9001-guide',
-        title: 'ISO 9001 Implementation Guide',
-        type: 'PDF',
-        description: 'Comprehensive step-by-step guide for implementing ISO 9001',
-        url: '/resources/iso-9001-implementation-guide.pdf',
-        size: '2.3 MB'
-      },
-      {
-        id: 'quality-manual-template',
-        title: 'Quality Manual Template',
-        type: 'DOCX',
-        description: 'Editable template for creating your quality manual',
-        url: '/resources/quality-manual-template.docx',
-        size: '156 KB'
-      },
-      {
-        id: 'procedure-templates',
-        title: 'Procedure Templates',
-        type: 'ZIP',
-        description: 'Collection of procedure templates for key processes',
-        url: '/resources/procedure-templates.zip',
-        size: '890 KB'
-      },
-      {
-        id: 'audit-checklist',
-        title: 'Internal Audit Checklist',
-        type: 'PDF',
-        description: 'Comprehensive checklist for conducting internal audits',
-        url: '/resources/iso-9001-audit-checklist.pdf',
-        size: '1.1 MB'
+        description: 'Create quality manual, procedures, and work instructions',
+        duration: '3-4 months',
+        resources: [],
+        checklist: [
+          'Develop quality manual',
+          'Create process procedures',
+          'Write work instructions',
+          'Establish document control system'
+        ],
+        tips: [
+          'Keep documentation simple and practical',
+          'Involve process owners in writing procedures',
+          'Use clear, concise language',
+          'Include examples and templates'
+        ]
       }
     ],
     certification: {
-      body: 'Various accredited certification bodies',
-      validity: '3 years with annual surveillance audits',
+      process: [
+        'Pre-assessment audit',
+        'Documentation review',
+        'On-site audit',
+        'Nonconformity resolution',
+        'Certification decision'
+      ],
+      requirements: [
+        'Complete implementation of ISO 9001 requirements',
+        'Documented quality management system',
+        'Internal audit program',
+        'Management review process',
+        'Corrective action system'
+      ],
+      duration: '2-3 months for initial certification',
       cost: '$15,000 - $50,000',
-      timeline: '2-3 months for initial certification'
+      auditors: [
+        'Accredited certification bodies',
+        'Qualified lead auditors',
+        'Technical experts'
+      ],
+      validity: '3 years with annual surveillance audits',
+      renewal: 'Re-certification audit every 3 years'
     },
-    popularity: 3247,
-    costBreakdown: [
-      {
-        item: 'Consultation',
-        cost: '$10,000 - $30,000',
-        description: 'Professional guidance and support'
-      },
-      {
-        item: 'Documentation',
-        cost: '$5,000 - $15,000',
-        description: 'Creating quality manual, procedures, and forms'
-      },
-      {
-        item: 'Certification',
-        cost: '$15,000 - $50,000',
-        description: 'Certification body fees and audit costs'
-      },
-      {
-        item: 'Maintenance',
-        cost: '$5,000 - $20,000 annually',
-        description: 'Ongoing audits, training, and system maintenance'
-      }
-    ],
+    cost: {
+      implementation: '$10,000 - $30,000',
+      certification: '$15,000 - $50,000',
+      maintenance: '$5,000 - $20,000 annually',
+      training: '$3,000 - $10,000',
+      total: '$33,000 - $110,000',
+      breakdown: [
+        {
+          item: 'Consultation',
+          cost: '$10,000 - $30,000',
+          description: 'Professional guidance and support'
+        },
+        {
+          item: 'Documentation',
+          cost: '$5,000 - $15,000',
+          description: 'Creating quality manual, procedures, and forms'
+        },
+        {
+          item: 'Certification',
+          cost: '$15,000 - $50,000',
+          description: 'Certification body fees and audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$5,000 - $20,000 annually',
+          description: 'Ongoing audits, training, and system maintenance'
+        }
+      ]
+    },
     timeline: {
       total: '8-18 months',
       phases: [
@@ -444,33 +285,62 @@ export const isoStandards: ISOStandard[] = [
           'Continuous improvement sustains benefits'
         ],
         contact: 'info@lagosmanufacturing.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-9001-guide',
+        title: 'ISO 9001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 9001',
+        url: '/resources/iso-9001-implementation-guide.pdf',
+        size: '2.3 MB',
+        duration: '2 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'quality management']
       },
       {
-        id: 'kenyan-healthcare',
-        title: 'Kenyan Healthcare Provider Enhances Patient Care with ISO 9001',
-        company: 'Nairobi Medical Center',
-        country: 'Kenya',
-        sector: 'Healthcare',
-        isoStandard: 'ISO 9001',
-        challenge: 'The medical center experienced inconsistent patient care quality, medication errors, and patient safety incidents.',
-        solution: 'Implemented ISO 9001 focusing on patient safety, care processes, and staff training to ensure consistent quality healthcare delivery.',
-        results: [
-          'Reduced medication errors by 80%',
-          'Improved patient satisfaction by 50%',
-          'Enhanced staff competency and confidence',
-          'Reduced patient complaints by 70%',
-          'Achieved regulatory compliance'
-        ],
-        lessons: [
-          'Patient safety must be the priority',
-          'Staff training is essential for success',
-          'Process standardization improves outcomes',
-          'Regular audits maintain quality',
-          'Continuous improvement is ongoing'
-        ],
-        contact: 'quality@nairobihealthcare.com'
+        id: 'quality-manual-template',
+        title: 'Quality Manual Template',
+        type: 'template',
+        description: 'Editable template for creating your quality manual',
+        url: '/resources/quality-manual-template.docx',
+        size: '156 KB',
+        duration: '1 hour',
+        language: 'English',
+        tags: ['template', 'documentation', 'quality manual']
       }
-    ]
+    ],
+    tags: ['quality management', 'process improvement', 'customer satisfaction', 'continual improvement'],
+    difficulty: 'Intermediate',
+    africanContext: {
+      relevance: 'ISO 9001 is highly relevant for African businesses seeking to improve quality, access international markets, and enhance competitiveness.',
+      challenges: [
+        'Limited resources for implementation',
+        'Lack of qualified consultants',
+        'Resistance to change',
+        'Limited understanding of quality management'
+      ],
+      opportunities: [
+        'Access to international markets',
+        'Improved customer trust',
+        'Enhanced competitiveness',
+        'Better supplier relationships'
+      ],
+      successStories: [
+        'Nigerian manufacturing companies achieving export certification',
+        'Kenyan healthcare providers improving patient care',
+        'Ghanaian agricultural firms accessing premium markets'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'National standards bodies',
+        'Regional quality associations'
+      ]
+    },
+    lastUpdated: '2024-01-15',
+    popularity: 3247
   },
   {
     id: 'iso-14001',
@@ -480,9 +350,9 @@ export const isoStandards: ISOStandard[] = [
     version: '2015',
     year: 2015,
     category: isoCategories[1],
-    sector: [sectors[0], sectors[4], sectors[5], sectors[6]], // Manufacturing, Agriculture, Energy, Construction
+    sector: [sectors[0], sectors[4], sectors[5], sectors[6]],
     description: 'ISO 14001 is the international standard for environmental management systems (EMS). It provides a framework for organizations to manage their environmental responsibilities systematically.',
-    overview: 'ISO 14001 helps organizations improve their environmental performance through more efficient use of resources and reduction of waste, gaining a competitive advantage and the trust of stakeholders.',
+    overview: 'ISO 14001 helps organizations improve their environmental performance through more efficient use of resources and reduction of waste.',
     purpose: 'To provide organizations with a framework for environmental protection, pollution prevention, and sustainable development.',
     scope: 'This International Standard specifies the requirements for an environmental management system that an organization can use to enhance its environmental performance.',
     keyPrinciples: [
@@ -522,282 +392,123 @@ export const isoStandards: ISOStandard[] = [
           'Defining appropriate scope',
           'Ensuring policy commitment'
         ],
-        cost: '$5,000 - $15,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'planning',
-        title: 'Planning',
-        description: 'Environmental aspects, compliance obligations, environmental objectives, and planning actions.',
-        requirements: [
-          'Identify environmental aspects',
-          'Determine compliance obligations',
-          'Establish environmental objectives',
-          'Plan actions to achieve objectives'
+        examples: [
+          'Environmental policy statement',
+          'Stakeholder register',
+          'Scope definition',
+          'Organizational structure'
         ],
-        implementation: [
-          'Conduct environmental aspects assessment',
-          'Review legal and other requirements',
-          'Set environmental objectives',
-          'Develop action plans'
-        ],
-        benefits: [
-          'Systematic environmental management',
-          'Compliance assurance',
-          'Clear improvement targets',
-          'Risk-based approach'
-        ],
-        challenges: [
-          'Identifying all environmental aspects',
-          'Keeping up with changing regulations',
-          'Setting realistic objectives',
-          'Balancing environmental and business needs'
-        ],
-        cost: '$8,000 - $20,000',
-        timeline: '3-4 months'
-      },
-      {
-        id: 'support',
-        title: 'Support',
-        description: 'Resources, competence, awareness, communication, and documented information.',
-        requirements: [
-          'Determine and provide necessary resources',
-          'Ensure competence of persons',
-          'Raise environmental awareness',
-          'Control documented information'
-        ],
-        implementation: [
-          'Allocate environmental resources',
-          'Develop environmental training',
-          'Create communication procedures',
-          'Establish document control'
-        ],
-        benefits: [
-          'Competent environmental staff',
-          'Enhanced environmental awareness',
-          'Effective communication',
-          'Controlled information'
-        ],
-        challenges: [
-          'Identifying training needs',
-          'Maintaining awareness levels',
-          'Managing environmental data',
-          'Ensuring resource availability'
-        ],
-        cost: '$6,000 - $18,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'operation',
-        title: 'Operation',
-        description: 'Operational planning and control, emergency preparedness and response.',
-        requirements: [
-          'Plan and control operations',
-          'Establish emergency procedures',
-          'Control environmental aspects',
-          'Manage environmental incidents'
-        ],
-        implementation: [
-          'Develop operational controls',
-          'Create emergency procedures',
-          'Implement environmental controls',
-          'Establish incident management'
-        ],
-        benefits: [
-          'Controlled environmental impacts',
-          'Emergency preparedness',
-          'Reduced environmental risks',
-          'Better incident response'
-        ],
-        challenges: [
-          'Identifying all operational aspects',
-          'Developing effective controls',
-          'Maintaining emergency readiness',
-          'Managing environmental incidents'
-        ],
-        cost: '$12,000 - $35,000',
-        timeline: '4-6 months'
-      },
-      {
-        id: 'performance-evaluation',
-        title: 'Performance Evaluation',
-        description: 'Monitoring, measurement, analysis and evaluation, internal audit, management review.',
-        requirements: [
-          'Monitor and measure environmental performance',
-          'Evaluate compliance',
-          'Conduct internal audits',
-          'Perform management reviews'
-        ],
-        implementation: [
-          'Establish monitoring systems',
-          'Create evaluation procedures',
-          'Develop audit program',
-          'Schedule management reviews'
-        ],
-        benefits: [
-          'Performance tracking',
-          'Compliance monitoring',
-          'Continuous improvement',
-          'Management oversight'
-        ],
-        challenges: [
-          'Selecting appropriate metrics',
-          'Ensuring audit independence',
-          'Maintaining data accuracy',
-          'Regular review scheduling'
-        ],
-        cost: '$5,000 - $15,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'improvement',
-        title: 'Improvement',
-        description: 'Nonconformity and corrective action, continual improvement.',
-        requirements: [
-          'React to nonconformities',
-          'Take corrective actions',
-          'Continually improve the EMS',
-          'Update environmental objectives'
-        ],
-        implementation: [
-          'Establish nonconformity procedures',
-          'Create corrective action system',
-          'Implement improvement processes',
-          'Review and update objectives'
-        ],
-        benefits: [
-          'Reduced environmental incidents',
-          'Systematic improvements',
-          'Better problem-solving',
-          'Enhanced environmental performance'
-        ],
-        challenges: [
-          'Root cause analysis',
-          'Implementing corrective actions',
-          'Measuring improvements',
-          'Maintaining momentum'
-        ],
-        cost: '$3,000 - $10,000',
-        timeline: 'Ongoing'
+        resources: []
       }
+    ],
+    requirements: [
+      'Establish environmental management system',
+      'Define environmental policy and objectives',
+      'Identify environmental aspects and impacts',
+      'Ensure compliance with environmental regulations',
+      'Maintain continual improvement'
     ],
     benefits: [
       'Reduced environmental impact',
       'Compliance with environmental regulations',
       'Improved resource efficiency',
       'Enhanced corporate reputation',
-      'Cost savings through waste reduction',
-      'Better stakeholder relationships',
-      'Access to new markets',
-      'Reduced environmental risks'
-    ],
-    challenges: [
-      'Initial implementation costs',
-      'Complex environmental regulations',
-      'Employee training requirements',
-      'Ongoing compliance monitoring',
-      'Stakeholder engagement',
-      'Data collection and analysis',
-      'Maintaining momentum',
-      'Balancing environmental and business goals'
+      'Cost savings through waste reduction'
     ],
     implementation: [
       {
+        id: 'environmental-assessment',
         title: 'Environmental Aspects Assessment',
-        description: 'Identify and evaluate environmental aspects and impacts'
+        description: 'Identify and evaluate environmental aspects and impacts',
+        duration: '2-3 weeks',
+        resources: [],
+        checklist: [
+          'Identify all environmental aspects',
+          'Evaluate significance of impacts',
+          'Document findings',
+          'Prioritize improvement areas'
+        ],
+        tips: [
+          'Involve environmental experts',
+          'Consider all operational activities',
+          'Document all findings thoroughly',
+          'Focus on significant aspects first'
+        ]
       },
       {
+        id: 'legal-compliance',
         title: 'Legal Compliance Review',
-        description: 'Identify and understand applicable environmental regulations'
-      },
-      {
-        title: 'Environmental Policy Development',
-        description: 'Create environmental policy and objectives'
-      },
-      {
-        title: 'Operational Controls',
-        description: 'Implement controls for significant environmental aspects'
-      },
-      {
-        title: 'Emergency Preparedness',
-        description: 'Develop emergency procedures and response plans'
-      },
-      {
-        title: 'Monitoring and Measurement',
-        description: 'Establish systems to monitor environmental performance'
-      },
-      {
-        title: 'Internal Auditing',
-        description: 'Conduct internal audits to verify EMS effectiveness'
-      },
-      {
-        title: 'Management Review',
-        description: 'Regular reviews to ensure EMS suitability and effectiveness'
-      }
-    ],
-    resources: [
-      {
-        id: 'iso-14001-guide',
-        title: 'ISO 14001 Implementation Guide',
-        type: 'PDF',
-        description: 'Comprehensive guide for implementing environmental management systems',
-        url: '/resources/iso-14001-implementation-guide.pdf',
-        size: '2.8 MB'
-      },
-      {
-        id: 'environmental-aspects-template',
-        title: 'Environmental Aspects Assessment Template',
-        type: 'XLSX',
-        description: 'Template for identifying and evaluating environmental aspects',
-        url: '/resources/environmental-aspects-template.xlsx',
-        size: '245 KB'
-      },
-      {
-        id: 'compliance-checklist',
-        title: 'Environmental Compliance Checklist',
-        type: 'PDF',
-        description: 'Checklist for ensuring compliance with environmental regulations',
-        url: '/resources/environmental-compliance-checklist.pdf',
-        size: '1.5 MB'
-      },
-      {
-        id: 'emergency-procedures-template',
-        title: 'Emergency Procedures Template',
-        type: 'DOCX',
-        description: 'Template for developing environmental emergency procedures',
-        url: '/resources/emergency-procedures-template.docx',
-        size: '320 KB'
+        description: 'Identify and understand applicable environmental regulations',
+        duration: '1-2 weeks',
+        resources: [],
+        checklist: [
+          'Identify applicable regulations',
+          'Review compliance status',
+          'Document requirements',
+          'Develop compliance plan'
+        ],
+        tips: [
+          'Consult with legal experts',
+          'Keep up with regulatory changes',
+          'Document compliance evidence',
+          'Plan for future requirements'
+        ]
       }
     ],
     certification: {
-      body: 'Various accredited certification bodies',
-      validity: '3 years with annual surveillance audits',
+      process: [
+        'Pre-assessment audit',
+        'Documentation review',
+        'On-site audit',
+        'Nonconformity resolution',
+        'Certification decision'
+      ],
+      requirements: [
+        'Complete implementation of ISO 14001 requirements',
+        'Documented environmental management system',
+        'Environmental aspects assessment',
+        'Compliance with environmental regulations',
+        'Management review process'
+      ],
+      duration: '2-3 months for initial certification',
       cost: '$18,000 - $60,000',
-      timeline: '2-3 months for initial certification'
+      auditors: [
+        'Accredited certification bodies',
+        'Qualified lead auditors',
+        'Environmental experts'
+      ],
+      validity: '3 years with annual surveillance audits',
+      renewal: 'Re-certification audit every 3 years'
     },
-    popularity: 2156,
-    costBreakdown: [
-      {
-        item: 'Environmental Assessment',
-        cost: '$8,000 - $25,000',
-        description: 'Environmental aspects analysis and compliance review'
-      },
-      {
-        item: 'System Development',
-        cost: '$10,000 - $30,000',
-        description: 'Developing environmental management system'
-      },
-      {
-        item: 'Certification',
-        cost: '$18,000 - $60,000',
-        description: 'Certification body fees and audit costs'
-      },
-      {
-        item: 'Maintenance',
-        cost: '$6,000 - $25,000 annually',
-        description: 'Ongoing audits, monitoring, and system maintenance'
-      }
-    ],
+    cost: {
+      implementation: '$12,000 - $35,000',
+      certification: '$18,000 - $60,000',
+      maintenance: '$6,000 - $25,000 annually',
+      training: '$4,000 - $12,000',
+      total: '$40,000 - $132,000',
+      breakdown: [
+        {
+          item: 'Environmental Assessment',
+          cost: '$8,000 - $25,000',
+          description: 'Environmental aspects analysis and compliance review'
+        },
+        {
+          item: 'System Development',
+          cost: '$10,000 - $30,000',
+          description: 'Developing environmental management system'
+        },
+        {
+          item: 'Certification',
+          cost: '$18,000 - $60,000',
+          description: 'Certification body fees and audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$6,000 - $25,000 annually',
+          description: 'Ongoing audits, monitoring, and system maintenance'
+        }
+      ]
+    },
     timeline: {
       total: '10-20 months',
       phases: [
@@ -869,7 +580,61 @@ export const isoStandards: ISOStandard[] = [
         ],
         contact: 'sustainability@ghanacocoa.com'
       }
-    ]
+    ],
+    resources: [
+      {
+        id: 'iso-14001-guide',
+        title: 'ISO 14001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive guide for implementing environmental management systems',
+        url: '/resources/iso-14001-implementation-guide.pdf',
+        size: '2.8 MB',
+        duration: '3 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'environmental management']
+      },
+      {
+        id: 'environmental-aspects-template',
+        title: 'Environmental Aspects Assessment Template',
+        type: 'template',
+        description: 'Template for identifying and evaluating environmental aspects',
+        url: '/resources/environmental-aspects-template.xlsx',
+        size: '245 KB',
+        duration: '30 minutes',
+        language: 'English',
+        tags: ['template', 'assessment', 'environmental aspects']
+      }
+    ],
+    tags: ['environmental management', 'sustainability', 'compliance', 'resource efficiency'],
+    difficulty: 'Intermediate',
+    africanContext: {
+      relevance: 'ISO 14001 is crucial for African businesses facing environmental challenges and seeking sustainable development.',
+      challenges: [
+        'Limited environmental expertise',
+        'Complex regulatory requirements',
+        'Resource constraints',
+        'Limited stakeholder awareness'
+      ],
+      opportunities: [
+        'Access to green markets',
+        'Enhanced sustainability credentials',
+        'Improved resource efficiency',
+        'Better community relations'
+      ],
+      successStories: [
+        'Ghanaian cocoa producers achieving sustainable certification',
+        'Kenyan tea estates improving environmental performance',
+        'South African mining companies reducing environmental impact'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Environmental protection agencies',
+        'Sustainable development organizations'
+      ]
+    },
+    lastUpdated: '2024-01-15',
+    popularity: 2156
   },
   {
     id: 'iso-27001',
@@ -879,7 +644,7 @@ export const isoStandards: ISOStandard[] = [
     version: '2013',
     year: 2013,
     category: isoCategories[2],
-    sector: [sectors[1], sectors[3], sectors[7], sectors[8]], // Technology, Financial Services, Telecommunications, Government
+    sector: [sectors[1], sectors[3], sectors[7], sectors[8]],
     description: 'ISO 27001 is the international standard for information security management systems (ISMS). It provides a framework for managing and protecting sensitive information.',
     overview: 'ISO 27001 helps organizations establish, implement, maintain, and continually improve an information security management system to protect their information assets.',
     purpose: 'To provide organizations with a framework for managing information security risks and protecting sensitive information assets.',
@@ -921,282 +686,123 @@ export const isoStandards: ISOStandard[] = [
           'Defining appropriate scope',
           'Ensuring policy commitment'
         ],
-        cost: '$8,000 - $25,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'planning',
-        title: 'Planning',
-        description: 'Information security risk assessment, risk treatment, and information security objectives.',
-        requirements: [
-          'Identify information security risks',
-          'Assess and treat risks',
-          'Establish information security objectives',
-          'Plan actions to achieve objectives'
+        examples: [
+          'Information security policy statement',
+          'Stakeholder register',
+          'Scope definition',
+          'Organizational structure'
         ],
-        implementation: [
-          'Conduct risk assessment',
-          'Develop risk treatment plans',
-          'Set security objectives',
-          'Create action plans'
-        ],
-        benefits: [
-          'Systematic risk management',
-          'Proactive security approach',
-          'Clear security targets',
-          'Risk-based decision making'
-        ],
-        challenges: [
-          'Identifying all security risks',
-          'Assessing risk likelihood and impact',
-          'Setting realistic objectives',
-          'Balancing security and business needs'
-        ],
-        cost: '$12,000 - $35,000',
-        timeline: '3-4 months'
-      },
-      {
-        id: 'support',
-        title: 'Support',
-        description: 'Resources, competence, awareness, communication, and documented information.',
-        requirements: [
-          'Determine and provide necessary resources',
-          'Ensure competence of persons',
-          'Raise security awareness',
-          'Control documented information'
-        ],
-        implementation: [
-          'Allocate security resources',
-          'Develop security training',
-          'Create communication procedures',
-          'Establish document control'
-        ],
-        benefits: [
-          'Competent security staff',
-          'Enhanced security awareness',
-          'Effective communication',
-          'Controlled information'
-        ],
-        challenges: [
-          'Identifying training needs',
-          'Maintaining awareness levels',
-          'Managing security documentation',
-          'Ensuring resource availability'
-        ],
-        cost: '$8,000 - $20,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'operation',
-        title: 'Operation',
-        description: 'Operational planning and control, information security risk assessment, and information security risk treatment.',
-        requirements: [
-          'Plan and control operations',
-          'Conduct risk assessments',
-          'Implement risk treatments',
-          'Monitor security controls'
-        ],
-        implementation: [
-          'Develop operational controls',
-          'Implement security measures',
-          'Monitor control effectiveness',
-          'Manage security incidents'
-        ],
-        benefits: [
-          'Controlled security risks',
-          'Effective security measures',
-          'Reduced security incidents',
-          'Better incident response'
-        ],
-        challenges: [
-          'Implementing effective controls',
-          'Monitoring control effectiveness',
-          'Managing security incidents',
-          'Balancing security and usability'
-        ],
-        cost: '$20,000 - $60,000',
-        timeline: '4-8 months'
-      },
-      {
-        id: 'performance-evaluation',
-        title: 'Performance Evaluation',
-        description: 'Monitoring, measurement, analysis and evaluation, internal audit, management review.',
-        requirements: [
-          'Monitor and measure security performance',
-          'Evaluate security effectiveness',
-          'Conduct internal audits',
-          'Perform management reviews'
-        ],
-        implementation: [
-          'Establish monitoring systems',
-          'Create evaluation procedures',
-          'Develop audit program',
-          'Schedule management reviews'
-        ],
-        benefits: [
-          'Performance tracking',
-          'Security effectiveness monitoring',
-          'Continuous improvement',
-          'Management oversight'
-        ],
-        challenges: [
-          'Selecting appropriate metrics',
-          'Ensuring audit independence',
-          'Maintaining data accuracy',
-          'Regular review scheduling'
-        ],
-        cost: '$6,000 - $18,000',
-        timeline: '2-3 months'
-      },
-      {
-        id: 'improvement',
-        title: 'Improvement',
-        description: 'Nonconformity and corrective action, continual improvement.',
-        requirements: [
-          'React to nonconformities',
-          'Take corrective actions',
-          'Continually improve the ISMS',
-          'Update security objectives'
-        ],
-        implementation: [
-          'Establish nonconformity procedures',
-          'Create corrective action system',
-          'Implement improvement processes',
-          'Review and update objectives'
-        ],
-        benefits: [
-          'Reduced security incidents',
-          'Systematic improvements',
-          'Better problem-solving',
-          'Enhanced security posture'
-        ],
-        challenges: [
-          'Root cause analysis',
-          'Implementing corrective actions',
-          'Measuring improvements',
-          'Maintaining momentum'
-        ],
-        cost: '$4,000 - $12,000',
-        timeline: 'Ongoing'
+        resources: []
       }
+    ],
+    requirements: [
+      'Establish information security management system',
+      'Define information security policy and objectives',
+      'Identify information security risks',
+      'Implement security controls',
+      'Maintain continual improvement'
     ],
     benefits: [
       'Enhanced information security',
       'Reduced security risks',
       'Compliance with regulations',
       'Improved customer trust',
-      'Better incident response',
-      'Reduced security breaches',
-      'Enhanced business continuity',
-      'Competitive advantage'
-    ],
-    challenges: [
-      'High implementation costs',
-      'Complex technical requirements',
-      'Ongoing security monitoring',
-      'Employee training requirements',
-      'Balancing security and usability',
-      'Keeping up with threats',
-      'Maintaining security controls',
-      'Regular security updates'
+      'Better incident response'
     ],
     implementation: [
       {
-        title: 'Information Asset Inventory',
-        description: 'Identify and classify all information assets'
+        id: 'security-assessment',
+        title: 'Information Security Assessment',
+        description: 'Identify and evaluate information security risks and assets',
+        duration: '3-4 weeks',
+        resources: [],
+        checklist: [
+          'Identify all information assets',
+          'Conduct risk assessment',
+          'Evaluate security controls',
+          'Document findings'
+        ],
+        tips: [
+          'Involve IT security experts',
+          'Consider all information types',
+          'Document all findings thoroughly',
+          'Focus on high-risk areas first'
+        ]
       },
       {
-        title: 'Risk Assessment',
-        description: 'Conduct comprehensive security risk assessment'
-      },
-      {
+        id: 'security-policy',
         title: 'Security Policy Development',
-        description: 'Develop information security policies and procedures'
-      },
-      {
-        title: 'Security Controls Implementation',
-        description: 'Implement technical and administrative security controls'
-      },
-      {
-        title: 'Incident Response Planning',
-        description: 'Develop security incident response procedures'
-      },
-      {
-        title: 'Security Monitoring',
-        description: 'Establish systems to monitor security performance'
-      },
-      {
-        title: 'Internal Auditing',
-        description: 'Conduct internal audits to verify ISMS effectiveness'
-      },
-      {
-        title: 'Management Review',
-        description: 'Regular reviews to ensure ISMS suitability and effectiveness'
-      }
-    ],
-    resources: [
-      {
-        id: 'iso-27001-guide',
-        title: 'ISO 27001 Implementation Guide',
-        type: 'PDF',
-        description: 'Comprehensive guide for implementing information security management systems',
-        url: '/resources/iso-27001-implementation-guide.pdf',
-        size: '3.2 MB'
-      },
-      {
-        id: 'risk-assessment-template',
-        title: 'Information Security Risk Assessment Template',
-        type: 'XLSX',
-        description: 'Template for conducting information security risk assessments',
-        url: '/resources/security-risk-assessment-template.xlsx',
-        size: '456 KB'
-      },
-      {
-        id: 'security-controls-checklist',
-        title: 'Security Controls Checklist',
-        type: 'PDF',
-        description: 'Comprehensive checklist of ISO 27001 security controls',
-        url: '/resources/security-controls-checklist.pdf',
-        size: '2.1 MB'
-      },
-      {
-        id: 'incident-response-template',
-        title: 'Security Incident Response Template',
-        type: 'DOCX',
-        description: 'Template for developing security incident response procedures',
-        url: '/resources/incident-response-template.docx',
-        size: '380 KB'
+        description: 'Develop comprehensive information security policies and procedures',
+        duration: '2-3 months',
+        resources: [],
+        checklist: [
+          'Develop security policy framework',
+          'Create security procedures',
+          'Establish access controls',
+          'Define incident response procedures'
+        ],
+        tips: [
+          'Align with business objectives',
+          'Involve key stakeholders',
+          'Keep policies practical and clear',
+          'Include examples and templates'
+        ]
       }
     ],
     certification: {
-      body: 'Various accredited certification bodies',
-      validity: '3 years with annual surveillance audits',
+      process: [
+        'Pre-assessment audit',
+        'Documentation review',
+        'On-site audit',
+        'Nonconformity resolution',
+        'Certification decision'
+      ],
+      requirements: [
+        'Complete implementation of ISO 27001 requirements',
+        'Documented information security management system',
+        'Risk assessment and treatment',
+        'Security controls implementation',
+        'Management review process'
+      ],
+      duration: '3-4 months for initial certification',
       cost: '$25,000 - $80,000',
-      timeline: '3-4 months for initial certification'
+      auditors: [
+        'Accredited certification bodies',
+        'Qualified lead auditors',
+        'Information security experts'
+      ],
+      validity: '3 years with annual surveillance audits',
+      renewal: 'Re-certification audit every 3 years'
     },
-    popularity: 1892,
-    costBreakdown: [
-      {
-        item: 'Security Assessment',
-        cost: '$15,000 - $40,000',
-        description: 'Information security risk assessment and gap analysis'
-      },
-      {
-        item: 'System Development',
-        cost: '$20,000 - $50,000',
-        description: 'Developing information security management system'
-      },
-      {
-        item: 'Certification',
-        cost: '$25,000 - $80,000',
-        description: 'Certification body fees and audit costs'
-      },
-      {
-        item: 'Maintenance',
-        cost: '$10,000 - $30,000 annually',
-        description: 'Ongoing audits, monitoring, and system maintenance'
-      }
-    ],
+    cost: {
+      implementation: '$20,000 - $50,000',
+      certification: '$25,000 - $80,000',
+      maintenance: '$10,000 - $30,000 annually',
+      training: '$5,000 - $15,000',
+      total: '$60,000 - $175,000',
+      breakdown: [
+        {
+          item: 'Security Assessment',
+          cost: '$15,000 - $40,000',
+          description: 'Information security risk assessment and gap analysis'
+        },
+        {
+          item: 'System Development',
+          cost: '$20,000 - $50,000',
+          description: 'Developing information security management system'
+        },
+        {
+          item: 'Certification',
+          cost: '$25,000 - $80,000',
+          description: 'Certification body fees and audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$10,000 - $30,000 annually',
+          description: 'Ongoing audits, monitoring, and system maintenance'
+        }
+      ]
+    },
     timeline: {
       total: '12-24 months',
       phases: [
@@ -1268,6 +874,354 @@ export const isoStandards: ISOStandard[] = [
         ],
         contact: 'security@nigerianbanking.com'
       }
-    ]
+    ],
+    resources: [
+      {
+        id: 'iso-27001-guide',
+        title: 'ISO 27001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive guide for implementing information security management systems',
+        url: '/resources/iso-27001-implementation-guide.pdf',
+        size: '3.2 MB',
+        duration: '4 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'information security']
+      },
+      {
+        id: 'security-risk-template',
+        title: 'Information Security Risk Assessment Template',
+        type: 'template',
+        description: 'Template for conducting information security risk assessments',
+        url: '/resources/security-risk-assessment-template.xlsx',
+        size: '456 KB',
+        duration: '30 minutes',
+        language: 'English',
+        tags: ['template', 'risk assessment', 'security']
+      }
+    ],
+    tags: ['information security', 'cybersecurity', 'data protection', 'risk management'],
+    difficulty: 'Advanced',
+    africanContext: {
+      relevance: 'ISO 27001 is critical for African businesses facing increasing cyber threats and regulatory requirements.',
+      challenges: [
+        'Limited cybersecurity expertise',
+        'Complex technical requirements',
+        'Resource constraints',
+        'Rapidly evolving threats'
+      ],
+      opportunities: [
+        'Enhanced data protection',
+        'Improved customer trust',
+        'Better regulatory compliance',
+        'Competitive advantage'
+      ],
+      successStories: [
+        'Nigerian banks improving data security',
+        'Kenyan fintech companies gaining trust',
+        'South African tech firms accessing global markets'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'National cybersecurity agencies',
+        'Regional security organizations'
+      ]
+    },
+    lastUpdated: '2024-01-15',
+    popularity: 1892
+  },
+  {
+    id: 'iso-45001',
+    code: 'ISO 45001',
+    name: 'Occupational Health and Safety Management',
+    fullName: 'ISO 45001:2018 - Occupational health and safety management systems — Requirements with guidance for use',
+    version: '2018',
+    year: 2018,
+    category: isoCategories[3],
+    sector: [sectors[0], sectors[4], sectors[5], sectors[6]],
+    description: 'ISO 45001 is the international standard for occupational health and safety management systems (OHSMS). It provides a framework for managing workplace health and safety risks.',
+    overview: 'ISO 45001 helps organizations improve their occupational health and safety performance and prevent work-related injuries and ill health.',
+    purpose: 'To provide organizations with a framework for managing occupational health and safety risks and improving workplace safety.',
+    scope: 'This International Standard specifies requirements for an occupational health and safety management system to enable an organization to proactively improve its OH&S performance.',
+    keyPrinciples: [
+      'Leadership and worker participation',
+      'Risk-based approach',
+      'Continual improvement',
+      'Compliance with requirements',
+      'Worker consultation and participation',
+      'Prevention of work-related injury and ill health'
+    ],
+    sections: [
+      {
+        id: 'context-leadership',
+        title: 'Context of the Organization & Leadership',
+        description: 'Understanding the organization and its context, interested parties, scope of the OH&S management system, and leadership commitment.',
+        requirements: [
+          'Determine external and internal issues',
+          'Identify interested parties and their needs',
+          'Define the scope of the OH&S management system',
+          'Establish OH&S policy'
+        ],
+        implementation: [
+          'Conduct organizational context analysis',
+          'Identify stakeholders and their concerns',
+          'Define OH&S system boundaries',
+          'Develop OH&S policy'
+        ],
+        benefits: [
+          'Clear safety direction',
+          'Stakeholder understanding',
+          'Defined scope and boundaries',
+          'Leadership commitment'
+        ],
+        challenges: [
+          'Identifying all safety risks',
+          'Balancing safety and productivity',
+          'Defining appropriate scope',
+          'Ensuring policy commitment'
+        ],
+        examples: [
+          'OH&S policy statement',
+          'Stakeholder register',
+          'Scope definition',
+          'Organizational structure'
+        ],
+        resources: []
+      }
+    ],
+    requirements: [
+      'Establish occupational health and safety management system',
+      'Define OH&S policy and objectives',
+      'Identify OH&S risks and opportunities',
+      'Implement OH&S controls',
+      'Maintain continual improvement'
+    ],
+    benefits: [
+      'Reduced workplace accidents',
+      'Improved worker health and safety',
+      'Compliance with safety regulations',
+      'Enhanced corporate reputation',
+      'Reduced insurance costs'
+    ],
+    implementation: [
+      {
+        id: 'safety-assessment',
+        title: 'OH&S Risk Assessment',
+        description: 'Identify and evaluate occupational health and safety risks',
+        duration: '2-3 weeks',
+        resources: [],
+        checklist: [
+          'Identify all workplace hazards',
+          'Assess risk levels',
+          'Evaluate existing controls',
+          'Document findings'
+        ],
+        tips: [
+          'Involve workers in the assessment',
+          'Consider all work activities',
+          'Document all findings thoroughly',
+          'Focus on high-risk areas first'
+        ]
+      },
+      {
+        id: 'safety-policy',
+        title: 'OH&S Policy Development',
+        description: 'Develop comprehensive occupational health and safety policies and procedures',
+        duration: '2-3 months',
+        resources: [],
+        checklist: [
+          'Develop OH&S policy framework',
+          'Create safety procedures',
+          'Establish emergency procedures',
+          'Define incident reporting procedures'
+        ],
+        tips: [
+          'Align with business objectives',
+          'Involve workers in development',
+          'Keep policies practical and clear',
+          'Include examples and templates'
+        ]
+      }
+    ],
+    certification: {
+      process: [
+        'Pre-assessment audit',
+        'Documentation review',
+        'On-site audit',
+        'Nonconformity resolution',
+        'Certification decision'
+      ],
+      requirements: [
+        'Complete implementation of ISO 45001 requirements',
+        'Documented OH&S management system',
+        'Risk assessment and treatment',
+        'OH&S controls implementation',
+        'Management review process'
+      ],
+      duration: '2-3 months for initial certification',
+      cost: '$20,000 - $60,000',
+      auditors: [
+        'Accredited certification bodies',
+        'Qualified lead auditors',
+        'OH&S experts'
+      ],
+      validity: '3 years with annual surveillance audits',
+      renewal: 'Re-certification audit every 3 years'
+    },
+    cost: {
+      implementation: '$15,000 - $40,000',
+      certification: '$20,000 - $60,000',
+      maintenance: '$8,000 - $25,000 annually',
+      training: '$4,000 - $12,000',
+      total: '$47,000 - $137,000',
+      breakdown: [
+        {
+          item: 'Safety Assessment',
+          cost: '$10,000 - $25,000',
+          description: 'OH&S risk assessment and gap analysis'
+        },
+        {
+          item: 'System Development',
+          cost: '$15,000 - $40,000',
+          description: 'Developing OH&S management system'
+        },
+        {
+          item: 'Certification',
+          cost: '$20,000 - $60,000',
+          description: 'Certification body fees and audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$8,000 - $25,000 annually',
+          description: 'Ongoing audits, training, and system maintenance'
+        }
+      ]
+    },
+    timeline: {
+      total: '10-18 months',
+      phases: [
+        {
+          phase: 'Safety Assessment',
+          duration: '2-3 months',
+          activities: [
+            'Workplace hazard identification',
+            'Risk assessment',
+            'Gap analysis',
+            'Stakeholder analysis'
+          ]
+        },
+        {
+          phase: 'System Development',
+          duration: '3-4 months',
+          activities: [
+            'OH&S policy development',
+            'Objective setting',
+            'Procedure development',
+            'Documentation creation'
+          ]
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: [
+            'Worker training',
+            'Control implementation',
+            'Emergency procedures',
+            'Monitoring systems'
+          ]
+        },
+        {
+          phase: 'Certification',
+          duration: '2-3 months',
+          activities: [
+            'Pre-assessment audit',
+            'Certification audit',
+            'Nonconformity resolution',
+            'Certification decision'
+          ]
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'kenyan-construction',
+        title: 'Kenyan Construction Company Improves Safety with ISO 45001',
+        company: 'Nairobi Construction Ltd',
+        country: 'Kenya',
+        sector: 'Construction',
+        isoStandard: 'ISO 45001',
+        challenge: 'The construction company experienced frequent workplace accidents, injuries, and regulatory compliance issues.',
+        solution: 'Implemented ISO 45001 focusing on hazard identification, risk assessment, and worker safety training.',
+        results: [
+          'Reduced workplace accidents by 70%',
+          'Improved worker safety awareness',
+          'Enhanced regulatory compliance',
+          'Reduced insurance premiums',
+          'Improved project completion rates'
+        ],
+        lessons: [
+          'Worker involvement is crucial',
+          'Safety training saves lives',
+          'Risk assessment prevents accidents',
+          'Leadership commitment drives success',
+          'Continuous improvement sustains benefits'
+        ],
+        contact: 'safety@nairobiconstruction.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-45001-guide',
+        title: 'ISO 45001 Implementation Guide',
+          type: 'guide',
+        description: 'Comprehensive guide for implementing occupational health and safety management systems',
+        url: '/resources/iso-45001-implementation-guide.pdf',
+        size: '2.9 MB',
+        duration: '3 hours',
+          language: 'English',
+        tags: ['implementation', 'guide', 'occupational health and safety']
+      },
+      {
+        id: 'safety-risk-template',
+        title: 'OH&S Risk Assessment Template',
+        type: 'template',
+        description: 'Template for conducting occupational health and safety risk assessments',
+        url: '/resources/safety-risk-assessment-template.xlsx',
+        size: '312 KB',
+        duration: '45 minutes',
+        language: 'English',
+        tags: ['template', 'risk assessment', 'safety']
+      }
+    ],
+    tags: ['occupational health and safety', 'workplace safety', 'risk management', 'worker protection'],
+    difficulty: 'Intermediate',
+    africanContext: {
+      relevance: 'ISO 45001 is essential for African businesses seeking to improve workplace safety and protect workers.',
+      challenges: [
+        'Limited safety expertise',
+        'Complex regulatory requirements',
+        'Resource constraints',
+        'Cultural resistance to change'
+      ],
+      opportunities: [
+        'Improved worker safety',
+        'Enhanced regulatory compliance',
+        'Reduced insurance costs',
+        'Better corporate reputation'
+      ],
+      successStories: [
+        'Kenyan construction companies reducing accidents',
+        'Nigerian manufacturing firms improving safety',
+        'Ghanaian mining companies protecting workers'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'National safety agencies',
+        'Regional safety organizations'
+      ]
+    },
+    lastUpdated: '2024-01-15',
+    popularity: 1654
   }
 ]; 
