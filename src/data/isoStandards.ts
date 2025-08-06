@@ -8,6 +8,111 @@ export const isoCategories: ISOCategory[] = [
     description: 'Standards for quality management systems and processes',
     icon: 'CheckCircleIcon',
     color: 'primary'
+  },
+  {
+    id: 'environmental-management',
+    name: 'Environmental Management',
+    description: 'Standards for environmental management and sustainability',
+    icon: 'LeafIcon',
+    color: 'green'
+  },
+  {
+    id: 'health-safety',
+    name: 'Health & Safety',
+    description: 'Standards for occupational health and safety management',
+    icon: 'ShieldCheckIcon',
+    color: 'red'
+  },
+  {
+    id: 'energy-management',
+    name: 'Energy Management',
+    description: 'Standards for energy efficiency and management',
+    icon: 'BoltIcon',
+    color: 'yellow'
+  },
+  {
+    id: 'business-continuity',
+    name: 'Business Continuity',
+    description: 'Standards for business continuity and disaster recovery',
+    icon: 'ArrowPathIcon',
+    color: 'blue'
+  },
+  {
+    id: 'anti-bribery',
+    name: 'Anti-Bribery',
+    description: 'Standards for anti-bribery and corruption management',
+    icon: 'ExclamationTriangleIcon',
+    color: 'orange'
+  },
+  {
+    id: 'risk-management',
+    name: 'Risk Management',
+    description: 'Standards for risk management and governance',
+    icon: 'ChartBarIcon',
+    color: 'purple'
+  },
+  {
+    id: 'social-responsibility',
+    name: 'Social Responsibility',
+    description: 'Standards for social responsibility and sustainability',
+    icon: 'HeartIcon',
+    color: 'pink'
+  },
+  {
+    id: 'information-security',
+    name: 'Information Security',
+    description: 'Standards for information security and data protection',
+    icon: 'LockClosedIcon',
+    color: 'indigo'
+  },
+  {
+    id: 'it-service-management',
+    name: 'IT Service Management',
+    description: 'Standards for IT service management and governance',
+    icon: 'ComputerDesktopIcon',
+    color: 'cyan'
+  },
+  {
+    id: 'supply-chain',
+    name: 'Supply Chain',
+    description: 'Standards for supply chain security and management',
+    icon: 'TruckIcon',
+    color: 'teal'
+  },
+  {
+    id: 'technical-engineering',
+    name: 'Technical & Engineering',
+    description: 'Standards for technical and engineering applications',
+    icon: 'WrenchScrewdriverIcon',
+    color: 'gray'
+  },
+  {
+    id: 'compliance-legal',
+    name: 'Compliance & Legal',
+    description: 'Standards for compliance management and legal requirements',
+    icon: 'ScaleIcon',
+    color: 'slate'
+  },
+  {
+    id: 'health-pharma',
+    name: 'Health & Pharma',
+    description: 'Standards for healthcare and pharmaceutical industries',
+    icon: 'BeakerIcon',
+    color: 'rose'
+  },
+  {
+    id: 'industry-specific',
+    name: 'Industry Specific',
+    description: 'Standards for specific industry applications',
+    icon: 'BuildingOfficeIcon',
+    color: 'stone'
+  },
+  {
+    id: 'innovation-quality',
+    name: 'Innovation & Quality',
+    description: 'Standards for innovation management and quality improvement',
+    icon: 'LightBulbIcon',
+    color: 'amber'
   }
 ];
 
@@ -19,7 +124,79 @@ export const sectors = [
     description: 'Manufacturing and production industries',
     icon: 'CogIcon',
     color: 'primary',
-    isoStandards: ['iso-9001']
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-27001', 'iso-27002', 'iso-27005', 'iso-27701', 'iso-27017', 'iso-27018', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-28000', 'iso-20252', 'iso-10002', 'iso-55001', 'iso-8000', 'iso-8573', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-13485', 'iso-15189', 'iso-10993', 'iso-ts-16949', 'iso-20121', 'iso-37120', 'iso-4217', 'iso-3166', 'iso-56002', 'iso-10004', 'iso-9241']
+  },
+  {
+    id: 'healthcare',
+    name: 'Healthcare',
+    description: 'Healthcare and medical services',
+    icon: 'HeartIcon',
+    color: 'red',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-27001', 'iso-13485', 'iso-15189', 'iso-10993', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-26000', 'iso-31000', 'iso-22301', 'iso-37001', 'iso-50001', 'iso-10002', 'iso-10004', 'iso-9241']
+  },
+  {
+    id: 'technology',
+    name: 'Technology',
+    description: 'Information technology and software development',
+    icon: 'ComputerDesktopIcon',
+    color: 'blue',
+    isoStandards: ['iso-27001', 'iso-27002', 'iso-27005', 'iso-27701', 'iso-27017', 'iso-27018', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-9001', 'iso-14001', 'iso-45001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-8000', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-9241', 'iso-56002']
+  },
+  {
+    id: 'finance',
+    name: 'Finance',
+    description: 'Banking, insurance, and financial services',
+    icon: 'BanknotesIcon',
+    color: 'green',
+    isoStandards: ['iso-27001', 'iso-27002', 'iso-27005', 'iso-27701', 'iso-27017', 'iso-27018', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-9001', 'iso-14001', 'iso-45001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-4217', 'iso-3166', 'iso-10002', 'iso-10004', 'iso-56002']
+  },
+  {
+    id: 'education',
+    name: 'Education',
+    description: 'Educational institutions and training organizations',
+    icon: 'AcademicCapIcon',
+    color: 'purple',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-27001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-9241', 'iso-56002']
+  },
+  {
+    id: 'government',
+    name: 'Government',
+    description: 'Public sector and government organizations',
+    icon: 'BuildingLibraryIcon',
+    color: 'slate',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-27001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-37120', 'iso-3166', 'iso-10002', 'iso-10004', 'iso-56002']
+  },
+  {
+    id: 'retail',
+    name: 'Retail',
+    description: 'Retail and consumer goods',
+    icon: 'ShoppingBagIcon',
+    color: 'orange',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-27001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-28000', 'iso-20252', 'iso-10002', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-4217', 'iso-3166', 'iso-10004', 'iso-56002']
+  },
+  {
+    id: 'construction',
+    name: 'Construction',
+    description: 'Construction and infrastructure development',
+    icon: 'BuildingOfficeIcon',
+    color: 'amber',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-55001', 'iso-8573', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-56002']
+  },
+  {
+    id: 'transportation',
+    name: 'Transportation',
+    description: 'Transportation and logistics',
+    icon: 'TruckIcon',
+    color: 'teal',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-28000', 'iso-55001', 'iso-8573', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-56002']
+  },
+  {
+    id: 'agriculture',
+    name: 'Agriculture',
+    description: 'Agriculture and food production',
+    icon: 'LeafIcon',
+    color: 'emerald',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-55001', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-56002']
   }
 ];
 
@@ -33,7 +210,7 @@ export const isoStandards: ISOStandard[] = [
     version: '2015',
     year: 2015,
     category: isoCategories[0],
-    sector: [sectors[0]],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
     description: 'ISO 9001 is the international standard for quality management systems (QMS).',
     overview: 'ISO 9001 helps organizations improve customer satisfaction and efficiency.',
     purpose: 'To provide organizations with a framework for quality management.',
@@ -257,7 +434,708 @@ export const isoStandards: ISOStandard[] = [
       ]
     },
     lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-14001',
+    code: 'ISO 14001',
+    name: 'Environmental Management Systems',
+    fullName: 'ISO 14001:2015 - Environmental management systems — Requirements with guidance for use',
+    version: '2015',
+    year: 2015,
+    category: isoCategories[1],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 14001 is the international standard for environmental management systems (EMS).',
+    overview: 'ISO 14001 helps organizations improve environmental performance and sustainability.',
+    purpose: 'To provide organizations with a framework for environmental management.',
+    scope: 'This International Standard specifies requirements for an environmental management system.',
+    keyPrinciples: [
+      'Environmental policy',
+      'Planning',
+      'Implementation and operation',
+      'Checking and corrective action',
+      'Management review',
+      'Continual improvement'
+    ],
+    sections: [
+      {
+        id: 'environmental-policy',
+        title: 'Environmental Policy & Planning',
+        description: 'Establishing environmental policy and planning for environmental management.',
+        requirements: [
+          'Develop environmental policy',
+          'Identify environmental aspects',
+          'Determine compliance obligations',
+          'Set environmental objectives'
+        ],
+        implementation: [
+          'Conduct environmental review',
+          'Identify significant aspects',
+          'Establish environmental policy',
+          'Set measurable objectives'
+        ],
+        benefits: [
+          'Clear environmental direction',
+          'Compliance with regulations',
+          'Resource efficiency',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all environmental aspects',
+          'Balancing economic and environmental goals',
+          'Ensuring regulatory compliance',
+          'Measuring environmental performance'
+        ],
+        examples: [
+          'Example 1: Environmental policy development',
+          'Example 2: Aspect identification process',
+          'Example 3: Objective setting framework',
+          'Example 4: Compliance assessment'
+        ],
+        resources: [
+          {
+            id: 'environmental-policy-template',
+            title: 'Environmental Policy Template',
+            type: 'template',
+            description: 'Template for environmental policy development',
+            url: '/resources/environmental-policy-template.docx',
+            size: '145 KB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['template', 'environmental', 'policy']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Environmental policy',
+      'Environmental aspects identification',
+      'Legal compliance',
+      'Environmental objectives'
+    ],
+    benefits: [
+      'Reduced environmental impact',
+      'Compliance with regulations',
+      'Cost savings through efficiency',
+      'Enhanced reputation'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Environmental Review',
+        description: 'Assess current environmental performance and impacts',
+        duration: '2-4 weeks',
+        resources: [
+          {
+            id: 'environmental-review-template',
+            title: 'Environmental Review Template',
+            type: 'template',
+            description: 'Template for conducting environmental review',
+            url: '/resources/environmental-review-template.xlsx',
+            size: '178 KB',
+            duration: '3 hours',
+            language: 'English',
+            tags: ['template', 'environmental', 'review']
+          }
+        ],
+        checklist: [
+          'Review current environmental practices',
+          'Identify environmental aspects and impacts',
+          'Assess compliance with regulations',
+          'Document findings and opportunities'
+        ],
+        tips: [
+          'Involve environmental experts',
+          'Consider all operational activities',
+          'Document regulatory requirements',
+          'Engage stakeholders'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Environmental review', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Environmental manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$5,000 - $15,000',
+      auditors: ['Accredited certification bodies', 'Environmental auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$20,000 - $60,000',
+      certification: '$5,000 - $15,000',
+      maintenance: '$4,000 - $10,000',
+      training: '$3,000 - $6,000',
+      total: '$32,000 - $91,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$20,000 - $60,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$5,000 - $15,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$4,000 - $10,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Environmental review', 'Aspect identification', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'kenyan-textile',
+        title: 'Kenyan Textile Company Reduces Environmental Impact',
+        company: 'Nairobi Textiles Ltd',
+        country: 'Kenya',
+        sector: 'Manufacturing',
+        isoStandard: 'ISO 14001',
+        challenge: 'The company faced environmental compliance issues and high energy costs.',
+        solution: 'Implemented ISO 14001 environmental management system.',
+        results: [
+          'Reduced energy consumption by 25%',
+          'Decreased water usage by 30%',
+          'Achieved full regulatory compliance',
+          'Reduced waste disposal costs by 40%'
+        ],
+        lessons: [
+          'Environmental management drives efficiency',
+          'Regulatory compliance builds trust',
+          'Resource efficiency reduces costs',
+          'Stakeholder engagement is crucial'
+        ],
+        contact: 'info@nairobitextiles.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-14001-guide',
+        title: 'ISO 14001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 14001',
+        url: '/resources/iso-14001-implementation-guide.pdf',
+        size: '2.8 MB',
+        duration: '2.5 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'environmental management']
+      }
+    ],
+    tags: ['environmental management', 'sustainability', 'compliance'],
+    difficulty: 'Intermediate',
+    popularity: 2156,
+    africanContext: {
+      relevance: 'ISO 14001 is crucial for African businesses facing environmental challenges.',
+      challenges: [
+        'Limited environmental expertise',
+        'Regulatory complexity',
+        'Resource constraints'
+      ],
+      opportunities: [
+        'Access to green markets',
+        'Improved regulatory compliance',
+        'Enhanced sustainability credentials'
+      ],
+      successStories: [
+        'South African mining companies reducing environmental impact',
+        'Ghanaian agricultural firms improving sustainability'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Environmental protection agencies'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-45001',
+    code: 'ISO 45001',
+    name: 'Occupational Health and Safety Management Systems',
+    fullName: 'ISO 45001:2018 - Occupational health and safety management systems — Requirements with guidance for use',
+    version: '2018',
+    year: 2018,
+    category: isoCategories[2],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 45001 is the international standard for occupational health and safety management systems.',
+    overview: 'ISO 45001 helps organizations provide safe and healthy workplaces.',
+    purpose: 'To provide organizations with a framework for OH&S management.',
+    scope: 'This International Standard specifies requirements for an occupational health and safety management system.',
+    keyPrinciples: [
+      'Leadership and worker participation',
+      'Planning',
+      'Support and operation',
+      'Performance evaluation',
+      'Improvement'
+    ],
+    sections: [
+      {
+        id: 'ohs-policy-planning',
+        title: 'OH&S Policy & Planning',
+        description: 'Establishing OH&S policy and planning for health and safety management.',
+        requirements: [
+          'Develop OH&S policy',
+          'Identify hazards and risks',
+          'Determine compliance obligations',
+          'Set OH&S objectives'
+        ],
+        implementation: [
+          'Conduct OH&S review',
+          'Identify significant hazards',
+          'Establish OH&S policy',
+          'Set measurable objectives'
+        ],
+        benefits: [
+          'Clear safety direction',
+          'Compliance with regulations',
+          'Risk reduction',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all hazards',
+          'Balancing safety and productivity',
+          'Ensuring regulatory compliance',
+          'Measuring safety performance'
+        ],
+        examples: [
+          'Example 1: OH&S policy development',
+          'Example 2: Hazard identification process',
+          'Example 3: Objective setting framework',
+          'Example 4: Compliance assessment'
+        ],
+        resources: [
+          {
+            id: 'ohs-policy-template',
+            title: 'OH&S Policy Template',
+            type: 'template',
+            description: 'Template for OH&S policy development',
+            url: '/resources/ohs-policy-template.docx',
+            size: '148 KB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['template', 'ohs', 'policy']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'OH&S policy',
+      'Hazard identification',
+      'Risk assessment',
+      'OH&S objectives'
+    ],
+    benefits: [
+      'Reduced workplace injuries',
+      'Improved safety culture',
+      'Compliance with regulations',
+      'Enhanced reputation'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'OH&S Review',
+        description: 'Assess current health and safety practices',
+        duration: '2-4 weeks',
+        resources: [
+          {
+            id: 'ohs-review-template',
+            title: 'OH&S Review Template',
+            type: 'template',
+            description: 'Template for conducting OH&S review',
+            url: '/resources/ohs-review-template.xlsx',
+            size: '165 KB',
+            duration: '3 hours',
+            language: 'English',
+            tags: ['template', 'ohs', 'review']
+          }
+        ],
+        checklist: [
+          'Review current safety practices',
+          'Identify hazards and risks',
+          'Assess compliance with regulations',
+          'Document findings and opportunities'
+        ],
+        tips: [
+          'Involve workers in the process',
+          'Consider all workplace activities',
+          'Document regulatory requirements',
+          'Engage safety experts'
+        ]
+      }
+    ],
+    certification: {
+      process: ['OH&S review', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['OH&S manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$6,000 - $18,000',
+      auditors: ['Accredited certification bodies', 'OH&S auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$25,000 - $75,000',
+      certification: '$6,000 - $18,000',
+      maintenance: '$5,000 - $12,000',
+      training: '$4,000 - $8,000',
+      total: '$40,000 - $113,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$25,000 - $75,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$6,000 - $18,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$5,000 - $12,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['OH&S review', 'Hazard identification', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'south-african-mining',
+        title: 'South African Mining Company Improves Safety Record',
+        company: 'Johannesburg Mining Corp',
+        country: 'South Africa',
+        sector: 'Manufacturing',
+        isoStandard: 'ISO 45001',
+        challenge: 'The company faced high injury rates and safety compliance issues.',
+        solution: 'Implemented ISO 45001 occupational health and safety management system.',
+        results: [
+          'Reduced workplace injuries by 70%',
+          'Improved safety culture scores by 50%',
+          'Achieved full regulatory compliance',
+          'Reduced insurance costs by 30%'
+        ],
+        lessons: [
+          'Worker participation is crucial',
+          'Leadership commitment drives success',
+          'Safety culture takes time to build',
+          'Regular training is essential'
+        ],
+        contact: 'info@johannesburgmining.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-45001-guide',
+        title: 'ISO 45001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 45001',
+        url: '/resources/iso-45001-implementation-guide.pdf',
+        size: '3.1 MB',
+        duration: '3 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'occupational health and safety']
+      }
+    ],
+    tags: ['occupational health and safety', 'workplace safety', 'risk management'],
+    difficulty: 'Intermediate',
+    popularity: 1892,
+    africanContext: {
+      relevance: 'ISO 45001 is essential for African businesses to improve workplace safety.',
+      challenges: [
+        'Limited safety expertise',
+        'Regulatory complexity',
+        'Resource constraints'
+      ],
+      opportunities: [
+        'Improved worker safety',
+        'Enhanced regulatory compliance',
+        'Reduced insurance costs'
+      ],
+      successStories: [
+        'Nigerian construction companies reducing accidents',
+        'Kenyan manufacturing firms improving safety culture'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Occupational safety authorities'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-50001',
+    code: 'ISO 50001',
+    name: 'Energy Management Systems',
+    fullName: 'ISO 50001:2018 - Energy management systems — Requirements with guidance for use',
+    version: '2018',
+    year: 2018,
+    category: isoCategories[3],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 50001 is the international standard for energy management systems.',
+    overview: 'ISO 50001 helps organizations improve energy performance and efficiency.',
+    purpose: 'To provide organizations with a framework for energy management.',
+    scope: 'This International Standard specifies requirements for an energy management system.',
+    keyPrinciples: [
+      'Energy policy',
+      'Energy planning',
+      'Implementation and operation',
+      'Performance evaluation',
+      'Management review',
+      'Continual improvement'
+    ],
+    sections: [
+      {
+        id: 'energy-policy-planning',
+        title: 'Energy Policy & Planning',
+        description: 'Establishing energy policy and planning for energy management.',
+        requirements: [
+          'Develop energy policy',
+          'Conduct energy review',
+          'Identify energy performance indicators',
+          'Set energy objectives'
+        ],
+        implementation: [
+          'Conduct energy review',
+          'Identify significant energy uses',
+          'Establish energy policy',
+          'Set measurable objectives'
+        ],
+        benefits: [
+          'Clear energy direction',
+          'Compliance with regulations',
+          'Cost reduction',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all energy uses',
+          'Balancing efficiency and productivity',
+          'Ensuring regulatory compliance',
+          'Measuring energy performance'
+        ],
+        examples: [
+          'Example 1: Energy policy development',
+          'Example 2: Energy review process',
+          'Example 3: Performance indicator framework',
+          'Example 4: Objective setting'
+        ],
+        resources: [
+          {
+            id: 'energy-policy-template',
+            title: 'Energy Policy Template',
+            type: 'template',
+            description: 'Template for energy policy development',
+            url: '/resources/energy-policy-template.docx',
+            size: '152 KB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['template', 'energy', 'policy']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Energy policy',
+      'Energy review',
+      'Energy performance indicators',
+      'Energy objectives'
+    ],
+    benefits: [
+      'Reduced energy costs',
+      'Improved energy efficiency',
+      'Compliance with regulations',
+      'Enhanced sustainability'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Energy Review',
+        description: 'Assess current energy performance and consumption',
+        duration: '2-4 weeks',
+        resources: [
+          {
+            id: 'energy-review-template',
+            title: 'Energy Review Template',
+            type: 'template',
+            description: 'Template for conducting energy review',
+            url: '/resources/energy-review-template.xlsx',
+            size: '142 KB',
+            duration: '2.5 hours',
+            language: 'English',
+            tags: ['template', 'energy', 'review']
+          }
+        ],
+        checklist: [
+          'Review current energy practices',
+          'Identify energy consumption patterns',
+          'Assess energy efficiency opportunities',
+          'Document findings and opportunities'
+        ],
+        tips: [
+          'Involve energy experts',
+          'Consider all energy sources',
+          'Document energy data',
+          'Engage stakeholders'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Energy review', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Energy manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$5,000 - $15,000',
+      auditors: ['Accredited certification bodies', 'Energy auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$20,000 - $60,000',
+      certification: '$5,000 - $15,000',
+      maintenance: '$4,000 - $10,000',
+      training: '$3,000 - $6,000',
+      total: '$32,000 - $91,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$20,000 - $60,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$5,000 - $15,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$4,000 - $10,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Energy review', 'Performance indicators', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'ghanaian-manufacturing',
+        title: 'Ghanaian Manufacturing Company Reduces Energy Costs',
+        company: 'Accra Manufacturing Ltd',
+        country: 'Ghana',
+        sector: 'Manufacturing',
+        isoStandard: 'ISO 50001',
+        challenge: 'The company faced high energy costs and inefficiency.',
+        solution: 'Implemented ISO 50001 energy management system.',
+        results: [
+          'Reduced energy costs by 35%',
+          'Improved energy efficiency by 25%',
+          'Achieved energy savings of $50,000 annually',
+          'Enhanced sustainability credentials'
+        ],
+        lessons: [
+          'Energy management drives cost savings',
+          'Data-driven approach is essential',
+          'Employee engagement is crucial',
+          'Continuous monitoring is key'
+        ],
+        contact: 'info@accramanufacturing.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-50001-guide',
+        title: 'ISO 50001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 50001',
+        url: '/resources/iso-50001-implementation-guide.pdf',
+        size: '2.9 MB',
+        duration: '2.5 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'energy management']
+      }
+    ],
+    tags: ['energy management', 'efficiency', 'sustainability'],
+    difficulty: 'Intermediate',
+    popularity: 1456,
+    africanContext: {
+      relevance: 'ISO 50001 is crucial for African businesses facing energy challenges.',
+      challenges: [
+        'Limited energy expertise',
+        'Infrastructure constraints',
+        'Data collection challenges'
+      ],
+      opportunities: [
+        'Reduced energy costs',
+        'Improved efficiency',
+        'Enhanced sustainability'
+      ],
+      successStories: [
+        'Nigerian industrial companies reducing energy costs',
+        'Kenyan commercial buildings improving efficiency'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Energy regulatory authorities'
+      ]
+    },
+    lastUpdated: '2024-01-15'
   }
-]; 
+];
 
 export default isoStandards;
