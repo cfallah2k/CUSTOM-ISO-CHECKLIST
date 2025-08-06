@@ -258,6 +258,6 @@ export const isoStandards: ISOStandard[] = [
     },
     lastUpdated: '2024-01-15'
   }
-];
+]; 
 
 export default isoStandards;
