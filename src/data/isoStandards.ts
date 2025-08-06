@@ -1603,6 +1603,947 @@ export const isoStandards: ISOStandard[] = [
       ]
     },
     lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-31000',
+    code: 'ISO 31000',
+    name: 'Risk Management Guidelines',
+    fullName: 'ISO 31000:2018 - Risk management — Guidelines',
+    version: '2018',
+    year: 2018,
+    category: isoCategories[6],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 31000 provides principles and framework for managing risk effectively.',
+    overview: 'ISO 31000 helps organizations identify, assess, and manage risks.',
+    purpose: 'To provide organizations with a framework for risk management.',
+    scope: 'This International Standard provides guidelines for managing risk.',
+    keyPrinciples: [
+      'Integrated',
+      'Structured and comprehensive',
+      'Customized',
+      'Inclusive',
+      'Dynamic',
+      'Best available information',
+      'Human and cultural factors',
+      'Continual improvement'
+    ],
+    sections: [
+      {
+        id: 'risk-framework',
+        title: 'Risk Management Framework',
+        description: 'Establishing risk management framework and process.',
+        requirements: [
+          'Develop risk management framework',
+          'Establish risk management process',
+          'Define risk criteria',
+          'Implement risk treatment'
+        ],
+        implementation: [
+          'Establish risk management policy',
+          'Define risk criteria',
+          'Implement risk assessment process',
+          'Develop risk treatment plans'
+        ],
+        benefits: [
+          'Improved decision making',
+          'Enhanced resilience',
+          'Better resource allocation',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all risks',
+          'Balancing risk and opportunity',
+          'Ensuring framework effectiveness',
+          'Maintaining risk awareness'
+        ],
+        examples: [
+          'Example 1: Risk management policy',
+          'Example 2: Risk assessment process',
+          'Example 3: Recovery strategy development',
+          'Example 4: Plan testing framework'
+        ],
+        resources: [
+          {
+            id: 'risk-framework-template',
+            title: 'Risk Management Framework Template',
+            type: 'template',
+            description: 'Template for risk management framework development',
+            url: '/resources/risk-framework-template.docx',
+            size: '168 KB',
+            duration: '2 hours',
+            language: 'English',
+            tags: ['template', 'risk management', 'framework']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Risk management framework',
+      'Risk management process',
+      'Risk criteria',
+      'Risk treatment'
+    ],
+    benefits: [
+      'Improved decision making',
+      'Enhanced resilience',
+      'Better resource allocation',
+      'Stakeholder confidence'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Risk Assessment',
+        description: 'Identify and assess risks to the organization',
+        duration: '3-6 weeks',
+        resources: [
+          {
+            id: 'risk-assessment-template',
+            title: 'Risk Assessment Template',
+            type: 'template',
+            description: 'Template for conducting risk assessment',
+            url: '/resources/risk-assessment-template.xlsx',
+            size: '195 KB',
+            duration: '4 hours',
+            language: 'English',
+            tags: ['template', 'risk', 'assessment']
+          }
+        ],
+        checklist: [
+          'Identify all potential risks',
+          'Assess risk likelihood and impact',
+          'Evaluate risk criteria',
+          'Document risk register'
+        ],
+        tips: [
+          'Involve key stakeholders',
+          'Use systematic approach',
+          'Consider all risk categories',
+          'Document assumptions clearly'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Risk assessment', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Risk management manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$8,000 - $25,000',
+      auditors: ['Accredited certification bodies', 'Risk management auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$25,000 - $80,000',
+      certification: '$8,000 - $25,000',
+      maintenance: '$5,000 - $15,000',
+      training: '$4,000 - $8,000',
+      total: '$42,000 - $128,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$25,000 - $80,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$8,000 - $25,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$5,000 - $15,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Risk assessment', 'Framework development', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'south-african-bank',
+        title: 'South African Bank Implements Risk Management',
+        company: 'Cape Town Bank Ltd',
+        country: 'South Africa',
+        sector: 'Finance',
+        isoStandard: 'ISO 31000',
+        challenge: 'The bank faced complex risks from market volatility and regulatory changes.',
+        solution: 'Implemented ISO 31000 risk management framework.',
+        results: [
+          'Improved risk-based decision making',
+          'Enhanced regulatory compliance',
+          'Reduced risk incidents by 40%',
+          'Improved stakeholder confidence'
+        ],
+        lessons: [
+          'Risk culture is crucial',
+          'Regular risk reviews are essential',
+          'Stakeholder engagement drives success',
+          'Continuous improvement is key'
+        ],
+        contact: 'info@capetownbank.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-31000-guide',
+        title: 'ISO 31000 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 31000',
+        url: '/resources/iso-31000-implementation-guide.pdf',
+        size: '3.0 MB',
+        duration: '3 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'risk management']
+      }
+    ],
+    tags: ['risk management', 'governance', 'decision making'],
+    difficulty: 'Intermediate',
+    popularity: 1654,
+    africanContext: {
+      relevance: 'ISO 31000 is crucial for African businesses facing various risks.',
+      challenges: [
+        'Limited risk management expertise',
+        'Resource constraints',
+        'Data availability issues'
+      ],
+      opportunities: [
+        'Improved decision making',
+        'Enhanced resilience',
+        'Better resource allocation'
+      ],
+      successStories: [
+        'Nigerian banks improving risk management',
+        'Kenyan insurance companies enhancing resilience'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Risk management associations'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-26000',
+    code: 'ISO 26000',
+    name: 'Social Responsibility Guidance',
+    fullName: 'ISO 26000:2010 - Guidance on social responsibility',
+    version: '2010',
+    year: 2010,
+    category: isoCategories[7],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 26000 provides guidance on social responsibility.',
+    overview: 'ISO 26000 helps organizations operate in a socially responsible manner.',
+    purpose: 'To provide organizations with guidance on social responsibility.',
+    scope: 'This International Standard provides guidance on social responsibility.',
+    keyPrinciples: [
+      'Accountability',
+      'Transparency',
+      'Ethical behavior',
+      'Respect for stakeholder interests',
+      'Respect for the rule of law',
+      'Respect for international norms of behavior',
+      'Respect for human rights'
+    ],
+    sections: [
+      {
+        id: 'sr-framework',
+        title: 'Social Responsibility Framework',
+        description: 'Establishing social responsibility framework and principles.',
+        requirements: [
+          'Develop social responsibility policy',
+          'Identify stakeholders',
+          'Assess social impacts',
+          'Implement social responsibility initiatives'
+        ],
+        implementation: [
+          'Establish social responsibility policy',
+          'Identify key stakeholders',
+          'Assess social impacts',
+          'Develop action plans'
+        ],
+        benefits: [
+          'Enhanced reputation',
+          'Improved stakeholder relationships',
+          'Better community engagement',
+          'Sustainable business practices'
+        ],
+        challenges: [
+          'Identifying all stakeholders',
+          'Balancing business and social goals',
+          'Measuring social impact',
+          'Ensuring long-term commitment'
+        ],
+        examples: [
+          'Example 1: Social responsibility policy',
+          'Example 2: Stakeholder engagement process',
+          'Example 3: Impact assessment framework',
+          'Example 4: Community development initiatives'
+        ],
+        resources: [
+          {
+            id: 'sr-framework-template',
+            title: 'Social Responsibility Framework Template',
+            type: 'template',
+            description: 'Template for social responsibility framework development',
+            url: '/resources/sr-framework-template.docx',
+            size: '172 KB',
+            duration: '2 hours',
+            language: 'English',
+            tags: ['template', 'social responsibility', 'framework']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Social responsibility policy',
+      'Stakeholder identification',
+      'Social impact assessment',
+      'Social responsibility initiatives'
+    ],
+    benefits: [
+      'Enhanced reputation',
+      'Improved stakeholder relationships',
+      'Better community engagement',
+      'Sustainable business practices'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Social Impact Assessment',
+        description: 'Assess social impacts and stakeholder needs',
+        duration: '2-4 weeks',
+        resources: [
+          {
+            id: 'social-impact-template',
+            title: 'Social Impact Assessment Template',
+            type: 'template',
+            description: 'Template for conducting social impact assessment',
+            url: '/resources/social-impact-template.xlsx',
+            size: '185 KB',
+            duration: '3 hours',
+            language: 'English',
+            tags: ['template', 'social impact', 'assessment']
+          }
+        ],
+        checklist: [
+          'Identify key stakeholders',
+          'Assess social impacts',
+          'Evaluate community needs',
+          'Document findings and recommendations'
+        ],
+        tips: [
+          'Engage with communities',
+          'Consider long-term impacts',
+          'Document stakeholder feedback',
+          'Develop action plans'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Social impact assessment', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Social responsibility manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$6,000 - $20,000',
+      auditors: ['Accredited certification bodies', 'Social responsibility auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$20,000 - $60,000',
+      certification: '$6,000 - $20,000',
+      maintenance: '$4,000 - $12,000',
+      training: '$3,000 - $6,000',
+      total: '$33,000 - $98,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$20,000 - $60,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$6,000 - $20,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$4,000 - $12,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Social impact assessment', 'Policy development', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'ghanaian-mining',
+        title: 'Ghanaian Mining Company Enhances Social Responsibility',
+        company: 'Accra Mining Corp',
+        country: 'Ghana',
+        sector: 'Manufacturing',
+        isoStandard: 'ISO 26000',
+        challenge: 'The company faced community concerns about environmental and social impacts.',
+        solution: 'Implemented ISO 26000 social responsibility framework.',
+        results: [
+          'Improved community relationships',
+          'Enhanced reputation and trust',
+          'Reduced community conflicts',
+          'Achieved sustainable development goals'
+        ],
+        lessons: [
+          'Community engagement is crucial',
+          'Long-term commitment is essential',
+          'Transparency builds trust',
+          'Sustainable practices drive success'
+        ],
+        contact: 'info@accramining.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-26000-guide',
+        title: 'ISO 26000 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 26000',
+        url: '/resources/iso-26000-implementation-guide.pdf',
+        size: '2.8 MB',
+        duration: '2.5 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'social responsibility']
+      }
+    ],
+    tags: ['social responsibility', 'sustainability', 'stakeholder engagement'],
+    difficulty: 'Intermediate',
+    popularity: 1432,
+    africanContext: {
+      relevance: 'ISO 26000 is essential for African businesses to demonstrate social responsibility.',
+      challenges: [
+        'Limited social responsibility expertise',
+        'Resource constraints',
+        'Community engagement complexity'
+      ],
+      opportunities: [
+        'Enhanced reputation',
+        'Improved community relationships',
+        'Sustainable business practices'
+      ],
+      successStories: [
+        'Nigerian oil companies improving community relations',
+        'Kenyan agricultural firms enhancing sustainability'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Social responsibility organizations'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-27001',
+    code: 'ISO/IEC 27001',
+    name: 'Information Security Management Systems',
+    fullName: 'ISO/IEC 27001:2013 - Information technology — Security techniques — Information security management systems — Requirements',
+    version: '2013',
+    year: 2013,
+    category: isoCategories[8],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO/IEC 27001 is the international standard for information security management systems.',
+    overview: 'ISO/IEC 27001 helps organizations protect information assets.',
+    purpose: 'To provide organizations with a framework for information security management.',
+    scope: 'This International Standard specifies requirements for an information security management system.',
+    keyPrinciples: [
+      'Information security policy',
+      'Risk assessment',
+      'Security controls',
+      'Incident management',
+      'Business continuity',
+      'Compliance'
+    ],
+    sections: [
+      {
+        id: 'information-security-policy',
+        title: 'Information Security Policy & Risk Assessment',
+        description: 'Establishing information security policy and conducting risk assessment.',
+        requirements: [
+          'Develop information security policy',
+          'Conduct information security risk assessment',
+          'Implement security controls',
+          'Establish incident management procedures'
+        ],
+        implementation: [
+          'Conduct information security risk assessment',
+          'Identify information assets',
+          'Establish information security policy',
+          'Implement security controls'
+        ],
+        benefits: [
+          'Enhanced information security',
+          'Reduced security incidents',
+          'Regulatory compliance',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all information assets',
+          'Balancing security and usability',
+          'Ensuring regulatory compliance',
+          'Maintaining security awareness'
+        ],
+        examples: [
+          'Example 1: Information security policy development',
+          'Example 2: Risk assessment process',
+          'Example 3: Security control implementation',
+          'Example 4: Incident management procedures'
+        ],
+        resources: [
+          {
+            id: 'information-security-policy-template',
+            title: 'Information Security Policy Template',
+            type: 'template',
+            description: 'Template for information security policy development',
+            url: '/resources/information-security-policy-template.docx',
+            size: '175 KB',
+            duration: '2 hours',
+            language: 'English',
+            tags: ['template', 'information security', 'policy']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Information security policy',
+      'Information security risk assessment',
+      'Security controls',
+      'Incident management procedures'
+    ],
+    benefits: [
+      'Enhanced information security',
+      'Reduced security incidents',
+      'Regulatory compliance',
+      'Stakeholder confidence'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Information Security Risk Assessment',
+        description: 'Assess information security risks and vulnerabilities',
+        duration: '3-6 weeks',
+        resources: [
+          {
+            id: 'information-security-risk-template',
+            title: 'Information Security Risk Assessment Template',
+            type: 'template',
+            description: 'Template for conducting information security risk assessment',
+            url: '/resources/information-security-risk-template.xlsx',
+            size: '198 KB',
+            duration: '4 hours',
+            language: 'English',
+            tags: ['template', 'information security', 'risk assessment']
+          }
+        ],
+        checklist: [
+          'Identify information assets',
+          'Assess security risks and vulnerabilities',
+          'Evaluate security controls',
+          'Document findings and recommendations'
+        ],
+        tips: [
+          'Involve IT security experts',
+          'Consider all information assets',
+          'Document risk factors clearly',
+          'Engage stakeholders'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Information security risk assessment', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Information security manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$12,000 - $35,000',
+      auditors: ['Accredited certification bodies', 'Information security auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$50,000 - $150,000',
+      certification: '$12,000 - $35,000',
+      maintenance: '$10,000 - $25,000',
+      training: '$8,000 - $15,000',
+      total: '$80,000 - $225,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$50,000 - $150,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$12,000 - $35,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$10,000 - $25,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Information security risk assessment', 'Policy development', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'nigerian-bank-security',
+        title: 'Nigerian Bank Enhances Information Security',
+        company: 'Abuja Bank Ltd',
+        country: 'Nigeria',
+        sector: 'Finance',
+        isoStandard: 'ISO/IEC 27001',
+        challenge: 'The bank faced increasing cyber threats and regulatory requirements.',
+        solution: 'Implemented ISO/IEC 27001 information security management system.',
+        results: [
+          'Reduced security incidents by 75%',
+          'Enhanced customer trust and confidence',
+          'Achieved regulatory compliance',
+          'Improved incident response time'
+        ],
+        lessons: [
+          'Strong security culture is essential',
+          'Regular training is crucial',
+          'Incident response planning is key',
+          'Continuous monitoring is important'
+        ],
+        contact: 'info@abujabank.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-27001-guide',
+        title: 'ISO/IEC 27001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO/IEC 27001',
+        url: '/resources/iso-27001-implementation-guide.pdf',
+        size: '3.6 MB',
+        duration: '4 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'information security']
+      }
+    ],
+    tags: ['information security', 'cybersecurity', 'data protection'],
+    difficulty: 'Advanced',
+    popularity: 2876,
+    africanContext: {
+      relevance: 'ISO/IEC 27001 is crucial for African businesses facing cyber threats.',
+      challenges: [
+        'Limited cybersecurity expertise',
+        'Infrastructure constraints',
+        'Resource limitations'
+      ],
+      opportunities: [
+        'Enhanced information security',
+        'Improved customer trust',
+        'Regulatory compliance'
+      ],
+      successStories: [
+        'South African banks improving cybersecurity',
+        'Kenyan fintech companies enhancing security'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Cybersecurity organizations'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-31000',
+    code: 'ISO 31000',
+    name: 'Risk Management Guidelines',
+    fullName: 'ISO 31000:2018 - Risk management — Guidelines',
+    version: '2018',
+    year: 2018,
+    category: isoCategories[6],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 31000 provides principles and framework for managing risk effectively.',
+    overview: 'ISO 31000 helps organizations identify, assess, and manage risks.',
+    purpose: 'To provide organizations with a framework for risk management.',
+    scope: 'This International Standard provides guidelines for managing risk.',
+    keyPrinciples: [
+      'Integrated',
+      'Structured and comprehensive',
+      'Customized',
+      'Inclusive',
+      'Dynamic',
+      'Best available information',
+      'Human and cultural factors',
+      'Continual improvement'
+    ],
+    sections: [
+      {
+        id: 'risk-framework',
+        title: 'Risk Management Framework',
+        description: 'Establishing risk management framework and process.',
+        requirements: [
+          'Develop risk management framework',
+          'Establish risk management process',
+          'Define risk criteria',
+          'Implement risk treatment'
+        ],
+        implementation: [
+          'Establish risk management policy',
+          'Define risk criteria',
+          'Implement risk assessment process',
+          'Develop risk treatment plans'
+        ],
+        benefits: [
+          'Improved decision making',
+          'Enhanced resilience',
+          'Better resource allocation',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all risks',
+          'Balancing risk and opportunity',
+          'Ensuring framework effectiveness',
+          'Maintaining risk awareness'
+        ],
+        examples: [
+          'Example 1: Risk management policy',
+          'Example 2: Risk assessment process',
+          'Example 3: Risk treatment strategies',
+          'Example 4: Monitoring and review'
+        ],
+        resources: [
+          {
+            id: 'risk-framework-template',
+            title: 'Risk Management Framework Template',
+            type: 'template',
+            description: 'Template for risk management framework development',
+            url: '/resources/risk-framework-template.docx',
+            size: '168 KB',
+            duration: '2 hours',
+            language: 'English',
+            tags: ['template', 'risk management', 'framework']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Risk management framework',
+      'Risk management process',
+      'Risk criteria',
+      'Risk treatment'
+    ],
+    benefits: [
+      'Improved decision making',
+      'Enhanced resilience',
+      'Better resource allocation',
+      'Stakeholder confidence'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Risk Assessment',
+        description: 'Identify and assess risks to the organization',
+        duration: '3-6 weeks',
+        resources: [
+          {
+            id: 'risk-assessment-template',
+            title: 'Risk Assessment Template',
+            type: 'template',
+            description: 'Template for conducting risk assessment',
+            url: '/resources/risk-assessment-template.xlsx',
+            size: '195 KB',
+            duration: '4 hours',
+            language: 'English',
+            tags: ['template', 'risk', 'assessment']
+          }
+        ],
+        checklist: [
+          'Identify all potential risks',
+          'Assess risk likelihood and impact',
+          'Evaluate risk criteria',
+          'Document risk register'
+        ],
+        tips: [
+          'Involve key stakeholders',
+          'Use systematic approach',
+          'Consider all risk categories',
+          'Document assumptions clearly'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Risk assessment', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Risk management manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$8,000 - $25,000',
+      auditors: ['Accredited certification bodies', 'Risk management auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$25,000 - $80,000',
+      certification: '$8,000 - $25,000',
+      maintenance: '$5,000 - $15,000',
+      training: '$4,000 - $8,000',
+      total: '$42,000 - $128,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$25,000 - $80,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$8,000 - $25,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$5,000 - $15,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Risk assessment', 'Framework development', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'south-african-bank',
+        title: 'South African Bank Implements Risk Management',
+        company: 'Cape Town Bank Ltd',
+        country: 'South Africa',
+        sector: 'Finance',
+        isoStandard: 'ISO 31000',
+        challenge: 'The bank faced complex risks from market volatility and regulatory changes.',
+        solution: 'Implemented ISO 31000 risk management framework.',
+        results: [
+          'Improved risk-based decision making',
+          'Enhanced regulatory compliance',
+          'Reduced risk incidents by 40%',
+          'Improved stakeholder confidence'
+        ],
+        lessons: [
+          'Risk culture is crucial',
+          'Regular risk reviews are essential',
+          'Stakeholder engagement drives success',
+          'Continuous improvement is key'
+        ],
+        contact: 'info@capetownbank.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-31000-guide',
+        title: 'ISO 31000 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 31000',
+        url: '/resources/iso-31000-implementation-guide.pdf',
+        size: '3.0 MB',
+        duration: '3 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'risk management']
+      }
+    ],
+    tags: ['risk management', 'governance', 'decision making'],
+    difficulty: 'Intermediate',
+    popularity: 1654,
+    africanContext: {
+      relevance: 'ISO 31000 is crucial for African businesses facing various risks.',
+      challenges: [
+        'Limited risk management expertise',
+        'Resource constraints',
+        'Data availability issues'
+      ],
+      opportunities: [
+        'Improved decision making',
+        'Enhanced resilience',
+        'Better resource allocation'
+      ],
+      successStories: [
+        'Nigerian banks improving risk management',
+        'Kenyan insurance companies enhancing resilience'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Risk management associations'
+      ]
+    },
+    lastUpdated: '2024-01-15'
   }
 ];
 
