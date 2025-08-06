@@ -5,7 +5,8 @@ import {
   AcademicCapIcon,
   GlobeAltIcon,
   ArrowRightIcon,
-  PlayIcon
+  PlayIcon,
+  SparklesIcon
 } from '@heroicons/react/24/outline';
 
 const HeroSection: React.FC = () => {
@@ -52,8 +53,8 @@ const HeroSection: React.FC = () => {
             >
               <motion.div variants={itemVariants} className="mb-6">
                 <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white/90 backdrop-blur-sm">
-                  <AcademicCapIcon className="h-4 w-4 mr-2" />
-                  African Union ISO Assessment Platform
+                  <SparklesIcon className="h-4 w-4 mr-2" />
+                  AI-Powered ISO Compliance Platform
                 </span>
               </motion.div>
 
@@ -61,19 +62,19 @@ const HeroSection: React.FC = () => {
                 variants={itemVariants}
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
               >
-                Empowering African
+                World's First AI-Powered
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-secondary-300 to-secondary-100">
-                  Organizations
+                  ISO Compliance Platform
                 </span>
-                Through ISO Excellence
+                for African Organizations
               </motion.h1>
 
               <motion.p 
                 variants={itemVariants}
                 className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed"
               >
-                Comprehensive ISO standards assessment, implementation guidance, and certification pathways 
-                designed specifically for African organizations and professionals.
+                Get intelligent AI recommendations, predictive analytics, and automated checklist generation 
+                for seamless ISO implementation. Powered by advanced machine learning for optimal results.
               </motion.p>
 
               <motion.div 

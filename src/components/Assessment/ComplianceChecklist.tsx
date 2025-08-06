@@ -7,10 +7,13 @@ import {
   ChartBarIcon,
   CogIcon,
   ShieldCheckIcon,
-  ComputerDesktopIcon
+  ComputerDesktopIcon,
+  SparklesIcon
 } from '@heroicons/react/24/outline';
 import { isoStandards } from '../../data/isoStandards';
 import { exportToCSV, exportToPDF } from '../../utils/exportUtils';
+import AIComplianceAssistant from '../AI/AIComplianceAssistant';
+import AIPredictiveAnalytics from '../AI/AIPredictiveAnalytics';
 
 interface ChecklistItem {
   id: string;
@@ -48,6 +51,8 @@ const ComplianceChecklist: React.FC<ComplianceChecklistProps> = ({
   const [filter, setFilter] = useState<'all' | 'high' | 'medium' | 'low'>('all');
   const [statusFilter, setStatusFilter] = useState<'all' | 'not-started' | 'in-progress' | 'completed'>('all');
   const [isGenerating, setIsGenerating] = useState(false);
+  const [showAI, setShowAI] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(false);
 
   const generateChecklist = useCallback(() => {
     setIsGenerating(true);
@@ -242,6 +247,20 @@ const ComplianceChecklist: React.FC<ComplianceChecklistProps> = ({
           </div>
           <div className="flex space-x-3">
             <button
+              onClick={() => setShowAI(!showAI)}
+              className="btn-outline flex items-center"
+            >
+              <SparklesIcon className="h-4 w-4 mr-2" />
+              AI Assistant
+            </button>
+            <button
+              onClick={() => setShowAnalytics(!showAnalytics)}
+              className="btn-outline flex items-center"
+            >
+              <ChartBarIcon className="h-4 w-4 mr-2" />
+              AI Analytics
+            </button>
+            <button
               onClick={() => {
                 exportToCSV(checklistItems, companyProfile.name);
                 onExport('csv');
@@ -408,6 +427,28 @@ const ComplianceChecklist: React.FC<ComplianceChecklistProps> = ({
         <div className="text-center py-12">
           <ClipboardDocumentListIcon className="h-12 w-12 text-gray-400 mx-auto mb-4" />
           <p className="text-gray-600">No items match your current filters.</p>
+        </div>
+      )}
+
+      {/* AI Components */}
+      {showAI && (
+        <div className="mt-8">
+          <AIComplianceAssistant
+            companyProfile={companyProfile}
+            selectedStandards={companyProfile.selectedStandards}
+            currentChecklist={checklistItems}
+            onRecommendation={(rec) => console.log('AI Recommendation:', rec)}
+          />
+        </div>
+      )}
+
+      {showAnalytics && (
+        <div className="mt-8">
+          <AIPredictiveAnalytics
+            companyProfile={companyProfile}
+            selectedStandards={companyProfile.selectedStandards}
+            currentProgress={stats.percentage}
+          />
         </div>
       )}
     </div>
