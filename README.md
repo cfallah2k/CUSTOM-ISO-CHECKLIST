@@ -1,6 +1,6 @@
-# AU ISO Fellowship Platform
+# AU ISO Assessment Platform
 
-A comprehensive, modern web application for the African Union EAN Fellowship Program, designed to empower African professionals with ISO standards knowledge and implementation guidance across all sectors.
+A comprehensive, modern web application for the African Union ISO Assessment Platform, designed to empower African organizations with ISO standards knowledge and implementation guidance across all sectors.
 
 ## 🌟 Features
 
@@ -37,8 +37,8 @@ A comprehensive, modern web application for the African Union EAN Fellowship Pro
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-org/au-iso-fellowship-platform.git
-   cd au-iso-fellowship-platform
+   git clone https://github.com/your-org/au-iso-assessment-platform.git
+cd au-iso-assessment-platform
    ```
 
 2. **Install dependencies**
@@ -115,7 +115,7 @@ The platform is fully responsive and optimized for:
 Create a `.env` file in the root directory:
 
 ```env
-REACT_APP_API_URL=https://api.au-iso-fellowship.org
+REACT_APP_API_URL=https://api.au-iso-assessment.org
 REACT_APP_ENVIRONMENT=development
 REACT_APP_ANALYTICS_ID=your-analytics-id
 ```
@@ -233,7 +233,7 @@ npm test -- --watch        # Watch mode
 - **Documentation**: Check the docs folder
 - **Issues**: Create GitHub issues for bugs
 - **Discussions**: Use GitHub discussions for questions
-- **Email**: support@au-iso-fellowship.org
+- **Email**: support@au-iso-assessment.org
 
 ### Community
 - **Slack**: Join our community workspace

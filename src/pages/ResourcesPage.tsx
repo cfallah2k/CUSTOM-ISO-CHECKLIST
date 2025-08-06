@@ -6,7 +6,7 @@ const ResourcesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Resources - AU ISO Fellowship Platform</title>
+        <title>Resources - AU ISO Assessment Platform</title>
         <meta name="description" content="Access comprehensive resources, templates, and guides for ISO standards implementation." />
       </Helmet>
       

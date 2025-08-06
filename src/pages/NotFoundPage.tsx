@@ -8,7 +8,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Page Not Found - AU ISO Fellowship Platform</title>
+        <title>Page Not Found - AU ISO Assessment Platform</title>
         <meta name="description" content="The page you're looking for doesn't exist." />
       </Helmet>
       
@@ -60,9 +60,9 @@ const NotFoundPage: React.FC = () => {
                   href: '/assessment',
                 },
                 {
-                  title: 'Fellowship',
-                  description: 'Join the African Union EAN Fellowship Program',
-                  href: '/fellowship',
+                  title: 'Resources',
+                  description: 'Access comprehensive resources and guides',
+                  href: '/resources',
                 },
               ].map((item) => (
                 <Link

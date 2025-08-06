@@ -1,7 +1,7 @@
 {
-  "name": "au-iso-fellowship-platform",
+  "name": "au-iso-assessment-platform",
   "version": "1.0.0",
-  "description": "African Union EAN Fellowship ISO Standards Platform",
+  "description": "African Union ISO Assessment Platform",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.17",

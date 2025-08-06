@@ -21,7 +21,6 @@ const Header: React.FC = () => {
     { name: 'Sectors', href: '/sectors' },
     { name: 'Assessment', href: '/assessment' },
     { name: 'Resources', href: '/resources' },
-    { name: 'About', href: '/about' },
   ];
 
   const isActive = (path: string) => {

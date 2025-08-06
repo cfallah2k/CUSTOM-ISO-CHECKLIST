@@ -138,58 +138,11 @@ export interface AfricanContext {
   regionalPartners: string[];
 }
 
-export interface FellowshipProgram {
-  id: string;
-  name: string;
-  description: string;
-  duration: string;
-  sectors: Sector[];
-  isoStandards: string[];
-  benefits: string[];
-  requirements: string[];
-  application: ApplicationProcess;
-  mentors: Mentor[];
-  alumni: Alumni[];
-}
-
-export interface ApplicationProcess {
-  steps: string[];
-  documents: string[];
-  deadline: string;
-  criteria: string[];
-  interview: string[];
-}
-
-export interface Mentor {
-  id: string;
-  name: string;
-  title: string;
-  company: string;
-  country: string;
-  expertise: string[];
-  isoStandards: string[];
-  bio: string;
-  photo: string;
-  contact: string;
-}
-
-export interface Alumni {
-  id: string;
-  name: string;
-  cohort: string;
-  currentRole: string;
-  company: string;
-  country: string;
-  achievements: string[];
-  testimonial: string;
-  photo: string;
-}
-
 export interface User {
   id: string;
   name: string;
   email: string;
-  role: 'fellow' | 'mentor' | 'admin' | 'guest';
+  role: 'user' | 'admin' | 'guest';
   country: string;
   sector: string[];
   interests: string[];

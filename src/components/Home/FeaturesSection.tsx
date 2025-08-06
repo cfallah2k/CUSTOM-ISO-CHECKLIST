@@ -146,7 +146,7 @@ const FeaturesSection: React.FC = () => {
               <span className="text-white font-bold text-2xl">94%</span>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Success Rate</h3>
-            <p className="text-gray-600">High success rate in ISO certification among our fellowship participants and platform users.</p>
+            <p className="text-gray-600">High success rate in ISO certification among our platform users and assessment participants.</p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="text-center">

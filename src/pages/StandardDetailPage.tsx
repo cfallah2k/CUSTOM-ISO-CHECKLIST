@@ -59,7 +59,7 @@ const StandardDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{standard.code} - {standard.name} | AU ISO Fellowship Platform</title>
+        <title>{standard.code} - {standard.name} | AU ISO Assessment Platform</title>
         <meta name="description" content={standard.description} />
       </Helmet>
       
@@ -247,7 +247,7 @@ const StandardDetailPage: React.FC = () => {
                     <Link to="/resources" className="block text-primary-600 hover:text-primary-700 font-medium">
                       Certification Checklist
                     </Link>
-                    <Link to="/fellowship" className="block text-primary-600 hover:text-primary-700 font-medium">
+                    <Link to="/assessment" className="block text-primary-600 hover:text-primary-700 font-medium">
                       Expert Mentorship
                     </Link>
                   </div>

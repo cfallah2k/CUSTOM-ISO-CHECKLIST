@@ -49,7 +49,7 @@ const SectorsPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Sectors - AU ISO Fellowship Platform</title>
+        <title>Sectors - AU ISO Assessment Platform</title>
         <meta name="description" content="Explore ISO standards by sector with industry-specific guidance and resources." />
       </Helmet>
       

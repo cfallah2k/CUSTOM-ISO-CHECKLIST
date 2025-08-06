@@ -51,7 +51,7 @@ const StandardsPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>ISO Standards - AU ISO Fellowship Platform</title>
+        <title>ISO Standards - AU ISO Assessment Platform</title>
         <meta name="description" content="Browse comprehensive ISO standards with detailed implementation guides, case studies, and African-specific resources." />
       </Helmet>
       

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://au-iso-fellowship.netlify.app/sitemap.xml 
+Sitemap: https://au-iso-assessment.netlify.app/sitemap.xml 

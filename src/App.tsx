@@ -16,7 +16,7 @@ import StandardDetailPage from './pages/StandardDetailPage';
 import SectorsPage from './pages/SectorsPage';
 import AssessmentPage from './pages/AssessmentPage';
 import ResourcesPage from './pages/ResourcesPage';
-import AboutPage from './pages/AboutPage';
+
 
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -151,7 +151,7 @@ function App() {
                         <Route path="/sectors" element={<SectorsPage />} />
                         <Route path="/assessment" element={<AssessmentPage />} />
                         <Route path="/resources" element={<ResourcesPage />} />
-                        <Route path="/about" element={<AboutPage />} />
+
 
                         <Route path="*" element={<NotFoundPage />} />
                       </Routes>
