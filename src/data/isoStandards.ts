@@ -124,7 +124,7 @@ export const sectors = [
     description: 'Manufacturing and production industries',
     icon: 'CogIcon',
     color: 'primary',
-    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-27001', 'iso-27002', 'iso-27005', 'iso-27701', 'iso-27017', 'iso-27018', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-28000', 'iso-20252', 'iso-10002', 'iso-55001', 'iso-8000', 'iso-8573', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-13485', 'iso-15189', 'iso-10993', 'iso-ts-16949', 'iso-20121', 'iso-37120', 'iso-4217', 'iso-3166', 'iso-56002', 'iso-10004', 'iso-9241']
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-27001', 'iso-27002', 'iso-27005', 'iso-27701', 'iso-27017', 'iso-27018', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-28000', 'iso-20252', 'iso-10002', 'iso-55001', 'iso-8000', 'iso-8573', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-13485', 'iso-15189', 'iso-10993', 'iso-ts-16949', 'iso-20121', 'iso-37120', 'iso-4217', 'iso-3166', 'iso-56002', 'iso-10004', 'iso-9241', 'iso-13485', 'iso-15189', 'iso-10993', 'iso-ts-16949', 'iso-20121', 'iso-37120', 'iso-4217', 'iso-3166', 'iso-56002', 'iso-10004', 'iso-9241']
   },
   {
     id: 'healthcare',
@@ -197,6 +197,22 @@ export const sectors = [
     icon: 'LeafIcon',
     color: 'emerald',
     isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-55001', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-56002']
+  },
+  {
+    id: 'creative-cultural',
+    name: 'Creative & Cultural Industries',
+    description: 'Arts, entertainment, media, and cultural organizations',
+    icon: 'FilmIcon',
+    color: 'violet',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-27001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-20121', 'iso-20000-1', 'iso-25010', 'iso-38500', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-9241', 'iso-56002']
+  },
+  {
+    id: 'mining-minerals',
+    name: 'Mining & Minerals',
+    description: 'Mining, minerals processing, and extractive industries',
+    icon: 'CubeIcon',
+    color: 'amber',
+    isoStandards: ['iso-9001', 'iso-14001', 'iso-45001', 'iso-50001', 'iso-22301', 'iso-37001', 'iso-31000', 'iso-26000', 'iso-55001', 'iso-8573', 'iso-37301', 'iso-37002', 'iso-19011', 'iso-10002', 'iso-10004', 'iso-56002']
   }
 ];
 
@@ -1848,7 +1864,7 @@ export const isoStandards: ISOStandard[] = [
     version: '2010',
     year: 2010,
     category: isoCategories[7],
-    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9], sectors[10], sectors[11]],
     description: 'ISO 26000 provides guidance on social responsibility.',
     overview: 'ISO 26000 helps organizations operate in a socially responsible manner.',
     purpose: 'To provide organizations with guidance on social responsibility.',
@@ -2083,7 +2099,7 @@ export const isoStandards: ISOStandard[] = [
     version: '2013',
     year: 2013,
     category: isoCategories[8],
-    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9], sectors[10], sectors[11]],
     description: 'ISO/IEC 27001 is the international standard for information security management systems.',
     overview: 'ISO/IEC 27001 helps organizations protect information assets.',
     purpose: 'To provide organizations with a framework for information security management.',
@@ -2317,7 +2333,7 @@ export const isoStandards: ISOStandard[] = [
     version: '2018',
     year: 2018,
     category: isoCategories[6],
-    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9], sectors[10], sectors[11]],
     description: 'ISO 31000 provides principles and framework for managing risk effectively.',
     overview: 'ISO 31000 helps organizations identify, assess, and manage risks.',
     purpose: 'To provide organizations with a framework for risk management.',
@@ -2541,6 +2557,248 @@ export const isoStandards: ISOStandard[] = [
       regionalPartners: [
         'African Organization for Standardization (ARSO)',
         'Risk management associations'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-27002',
+    code: 'ISO/IEC 27002',
+    name: 'Information Security Controls',
+    fullName: 'ISO/IEC 27002:2022 - Information security, cybersecurity and privacy protection — Information security controls',
+    version: '2022',
+    year: 2022,
+    category: isoCategories[8],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9], sectors[10], sectors[11]],
+    description: 'ISO/IEC 27002 provides guidelines for information security controls.',
+    overview: 'ISO/IEC 27002 helps organizations implement effective information security controls.',
+    purpose: 'To provide organizations with guidelines for information security controls.',
+    scope: 'This International Standard provides guidelines for information security controls.',
+    keyPrinciples: [
+      'Security policy',
+      'Organization of information security',
+      'Human resource security',
+      'Asset management',
+      'Access control',
+      'Cryptography',
+      'Physical and environmental security',
+      'Operations security',
+      'Communications security',
+      'System acquisition, development and maintenance',
+      'Supplier relationships',
+      'Information security incident management',
+      'Information security aspects of business continuity management',
+      'Compliance'
+    ],
+    sections: [
+      {
+        id: 'security-controls',
+        title: 'Information Security Controls',
+        description: 'Implementing comprehensive information security controls.',
+        requirements: [
+          'Develop security control framework',
+          'Implement organizational controls',
+          'Establish human resource security',
+          'Manage information assets'
+        ],
+        implementation: [
+          'Assess current security controls',
+          'Identify control gaps',
+          'Implement required controls',
+          'Monitor control effectiveness'
+        ],
+        benefits: [
+          'Enhanced information security',
+          'Reduced security risks',
+          'Regulatory compliance',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Implementing all required controls',
+          'Balancing security and usability',
+          'Ensuring control effectiveness',
+          'Maintaining control currency'
+        ],
+        examples: [
+          'Example 1: Security policy development',
+          'Example 2: Access control implementation',
+          'Example 3: Incident management procedures',
+          'Example 4: Compliance monitoring'
+        ],
+        resources: [
+          {
+            id: 'security-controls-template',
+            title: 'Security Controls Template',
+            type: 'template',
+            description: 'Template for implementing security controls',
+            url: '/resources/security-controls-template.docx',
+            size: '182 KB',
+            duration: '2.5 hours',
+            language: 'English',
+            tags: ['template', 'security controls', 'implementation']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Security control framework',
+      'Organizational controls',
+      'Human resource security',
+      'Asset management'
+    ],
+    benefits: [
+      'Enhanced information security',
+      'Reduced security risks',
+      'Regulatory compliance',
+      'Stakeholder confidence'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Security Control Assessment',
+        description: 'Assess current security controls and identify gaps',
+        duration: '2-4 weeks',
+        resources: [
+          {
+            id: 'security-control-assessment-template',
+            title: 'Security Control Assessment Template',
+            type: 'template',
+            description: 'Template for conducting security control assessment',
+            url: '/resources/security-control-assessment-template.xlsx',
+            size: '205 KB',
+            duration: '3.5 hours',
+            language: 'English',
+            tags: ['template', 'security controls', 'assessment']
+          }
+        ],
+        checklist: [
+          'Review current security controls',
+          'Identify control gaps',
+          'Assess control effectiveness',
+          'Document findings and recommendations'
+        ],
+        tips: [
+          'Involve security experts',
+          'Consider all control categories',
+          'Document control requirements clearly',
+          'Engage stakeholders'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Security control assessment', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Security controls manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$10,000 - $30,000',
+      auditors: ['Accredited certification bodies', 'Information security auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$40,000 - $120,000',
+      certification: '$10,000 - $30,000',
+      maintenance: '$8,000 - $20,000',
+      training: '$6,000 - $12,000',
+      total: '$64,000 - $182,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$40,000 - $120,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$10,000 - $30,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$8,000 - $20,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Security control assessment', 'Framework development', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'kenyan-fintech',
+        title: 'Kenyan Fintech Company Implements Security Controls',
+        company: 'Nairobi Fintech Ltd',
+        country: 'Kenya',
+        sector: 'Technology',
+        isoStandard: 'ISO/IEC 27002',
+        challenge: 'The company needed to implement comprehensive security controls for regulatory compliance.',
+        solution: 'Implemented ISO/IEC 27002 information security controls.',
+        results: [
+          'Enhanced security posture',
+          'Achieved regulatory compliance',
+          'Improved customer trust',
+          'Reduced security incidents'
+        ],
+        lessons: [
+          'Comprehensive control implementation is essential',
+          'Regular control monitoring is crucial',
+          'Employee training drives success',
+          'Continuous improvement is key'
+        ],
+        contact: 'info@nairobifintech.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-27002-guide',
+        title: 'ISO/IEC 27002 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO/IEC 27002',
+        url: '/resources/iso-27002-implementation-guide.pdf',
+        size: '3.8 MB',
+        duration: '4.5 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'information security controls']
+      }
+    ],
+    tags: ['information security', 'cybersecurity', 'security controls'],
+    difficulty: 'Advanced',
+    popularity: 2345,
+    africanContext: {
+      relevance: 'ISO/IEC 27002 is essential for African businesses implementing security controls.',
+      challenges: [
+        'Limited security expertise',
+        'Resource constraints',
+        'Infrastructure limitations'
+      ],
+      opportunities: [
+        'Enhanced security posture',
+        'Improved regulatory compliance',
+        'Better customer trust'
+      ],
+      successStories: [
+        'South African banks implementing security controls',
+        'Nigerian fintech companies enhancing security'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Cybersecurity organizations'
       ]
     },
     lastUpdated: '2024-01-15'
