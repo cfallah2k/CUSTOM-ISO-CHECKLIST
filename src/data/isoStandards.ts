@@ -1534,7 +1534,7 @@ export const isoStandards: ISOStandard[] = [
       }
     ],
     certification: {
-      process: 'Third-party certification audit by accredited certification body',
+      process: ['Third-party certification audit by accredited certification body'],
       requirements: [
         'Complete BCMS implementation',
         'Internal audit completion',
@@ -1543,8 +1543,9 @@ export const isoStandards: ISOStandard[] = [
       ],
       validity: '3 years with annual surveillance audits',
       cost: '$15,000 - $45,000',
-      timeline: '2-3 months for initial certification',
-      auditors: 'Accredited business continuity management system auditors'
+      duration: '2-3 months for initial certification',
+      auditors: ['Accredited business continuity management system auditors'],
+      renewal: 'Annual surveillance audits required'
     },
     cost: {
       implementation: '$25,000 - $75,000',
