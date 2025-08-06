@@ -13,12 +13,14 @@ interface AssessmentResultsProps {
   userProfile: UserProfile;
   results: AssessmentResult[];
   onStartNewAssessment: () => void;
+  onStartChecklist?: () => void;
 }
 
 const AssessmentResults: React.FC<AssessmentResultsProps> = ({
   userProfile,
   results,
-  onStartNewAssessment
+  onStartNewAssessment,
+  onStartChecklist
 }) => {
   const sortedResults = results.sort((a, b) => b.matchScore - a.matchScore);
 
@@ -183,12 +185,23 @@ const AssessmentResults: React.FC<AssessmentResultsProps> = ({
 
       {/* Action Buttons */}
       <div className="mt-8 text-center space-y-4">
-        <button
-          onClick={onStartNewAssessment}
-          className="btn-primary"
-        >
-          Start New Assessment
-        </button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onClick={onStartNewAssessment}
+            className="btn-primary"
+          >
+            Start New Assessment
+          </button>
+          
+          {onStartChecklist && (
+            <button
+              onClick={onStartChecklist}
+              className="btn-outline"
+            >
+              Generate Compliance Checklist
+            </button>
+          )}
+        </div>
         
         <div className="text-sm text-gray-500">
           <p>Need help understanding your results?</p>
