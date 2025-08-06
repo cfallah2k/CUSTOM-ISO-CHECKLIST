@@ -41,6 +41,42 @@ const AIPredictiveAnalytics: React.FC<AIPredictiveAnalyticsProps> = ({
     // Simulate AI analysis
     await new Promise(resolve => setTimeout(resolve, 1500));
     
+    // Calculate insights inline to avoid dependency issues
+    const calculateBaseSuccessRate = (): number => {
+      let baseRate = 70;
+      if (companyProfile.size === 'Enterprise') baseRate += 10;
+      else if (companyProfile.size === 'SME') baseRate += 5;
+      if (companyProfile.maturityLevel === 'Advanced') baseRate += 15;
+      else if (companyProfile.maturityLevel === 'Intermediate') baseRate += 8;
+      baseRate += currentProgress * 0.2;
+      return Math.min(95, Math.max(30, Math.round(baseRate)));
+    };
+
+    const calculateCostOptimization = (): number => {
+      let optimization = 25;
+      if (companyProfile.size === 'Startup') optimization += 15;
+      if (companyProfile.maturityLevel === 'Basic') optimization += 10;
+      if (selectedStandards.length > 3) optimization += 5;
+      return Math.min(50, Math.round(optimization));
+    };
+
+    const calculateRiskScore = (): number => {
+      let riskScore = 40;
+      if (companyProfile.size === 'Enterprise') riskScore -= 10;
+      if (companyProfile.maturityLevel === 'Advanced') riskScore -= 15;
+      if (currentProgress > 50) riskScore -= 10;
+      if (selectedStandards.length > 4) riskScore += 10;
+      return Math.min(80, Math.max(10, Math.round(riskScore)));
+    };
+
+    const calculateTimelineOptimization = (): number => {
+      let optimization = 20;
+      if (companyProfile.maturityLevel === 'Advanced') optimization += 10;
+      if (currentProgress > 30) optimization += 5;
+      if (selectedStandards.length <= 2) optimization += 10;
+      return Math.min(40, Math.round(optimization));
+    };
+    
     const baseSuccessRate = calculateBaseSuccessRate();
     const costOptimization = calculateCostOptimization();
     const riskScore = calculateRiskScore();
@@ -107,59 +143,13 @@ const AIPredictiveAnalytics: React.FC<AIPredictiveAnalyticsProps> = ({
     
     setInsights(predictiveInsights);
     setIsAnalyzing(false);
-  }, [companyProfile, selectedStandards, currentProgress, selectedTimeframe]);
+  }, [companyProfile, selectedStandards, currentProgress]);
 
   useEffect(() => {
     generatePredictiveInsights();
   }, [generatePredictiveInsights]);
 
-  const calculateBaseSuccessRate = (): number => {
-    let baseRate = 70;
-    
-    // Adjust based on company size
-    if (companyProfile.size === 'Enterprise') baseRate += 10;
-    else if (companyProfile.size === 'SME') baseRate += 5;
-    
-    // Adjust based on maturity
-    if (companyProfile.maturityLevel === 'Advanced') baseRate += 15;
-    else if (companyProfile.maturityLevel === 'Intermediate') baseRate += 8;
-    
-    // Adjust based on current progress
-    baseRate += currentProgress * 0.2;
-    
-    return Math.min(95, Math.max(30, Math.round(baseRate)));
-  };
 
-  const calculateCostOptimization = (): number => {
-    let optimization = 25;
-    
-    if (companyProfile.size === 'Startup') optimization += 15;
-    if (companyProfile.maturityLevel === 'Basic') optimization += 10;
-    if (selectedStandards.length > 3) optimization += 5;
-    
-    return Math.min(50, Math.round(optimization));
-  };
-
-  const calculateRiskScore = (): number => {
-    let riskScore = 40;
-    
-    if (companyProfile.size === 'Enterprise') riskScore -= 10;
-    if (companyProfile.maturityLevel === 'Advanced') riskScore -= 15;
-    if (currentProgress > 50) riskScore -= 10;
-    if (selectedStandards.length > 4) riskScore += 10;
-    
-    return Math.min(80, Math.max(10, Math.round(riskScore)));
-  };
-
-  const calculateTimelineOptimization = (): number => {
-    let optimization = 20;
-    
-    if (companyProfile.maturityLevel === 'Advanced') optimization += 10;
-    if (currentProgress > 30) optimization += 5;
-    if (selectedStandards.length <= 2) optimization += 10;
-    
-    return Math.min(40, Math.round(optimization));
-  };
 
   const getTrendIcon = (trend: string) => {
     switch (trend) {
