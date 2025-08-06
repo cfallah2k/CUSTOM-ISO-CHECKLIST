@@ -1135,6 +1135,474 @@ export const isoStandards: ISOStandard[] = [
       ]
     },
     lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-22301',
+    code: 'ISO 22301',
+    name: 'Business Continuity Management',
+    fullName: 'ISO 22301:2019 - Security and resilience — Business continuity management systems — Requirements',
+    version: '2019',
+    year: 2019,
+    category: isoCategories[4],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 22301 is the international standard for business continuity management systems.',
+    overview: 'ISO 22301 helps organizations ensure preparedness and recovery from disruptive incidents.',
+    purpose: 'To provide organizations with a framework for business continuity management.',
+    scope: 'This International Standard specifies requirements for a business continuity management system.',
+    keyPrinciples: [
+      'Leadership and commitment',
+      'Business continuity policy',
+      'Business impact analysis',
+      'Risk assessment',
+      'Business continuity strategies',
+      'Business continuity plans'
+    ],
+    sections: [
+      {
+        id: 'bc-policy-planning',
+        title: 'Business Continuity Policy & Planning',
+        description: 'Establishing business continuity policy and planning for resilience.',
+        requirements: [
+          'Develop business continuity policy',
+          'Conduct business impact analysis',
+          'Assess risks and threats',
+          'Develop business continuity strategies'
+        ],
+        implementation: [
+          'Conduct business impact analysis',
+          'Identify critical functions',
+          'Establish business continuity policy',
+          'Develop recovery strategies'
+        ],
+        benefits: [
+          'Enhanced resilience',
+          'Reduced downtime',
+          'Stakeholder confidence',
+          'Regulatory compliance'
+        ],
+        challenges: [
+          'Identifying all critical functions',
+          'Balancing cost and resilience',
+          'Ensuring plan effectiveness',
+          'Maintaining plan currency'
+        ],
+        examples: [
+          'Example 1: Business impact analysis',
+          'Example 2: Risk assessment process',
+          'Example 3: Recovery strategy development',
+          'Example 4: Plan testing framework'
+        ],
+        resources: [
+          {
+            id: 'bc-policy-template',
+            title: 'Business Continuity Policy Template',
+            type: 'template',
+            description: 'Template for business continuity policy development',
+            url: '/resources/bc-policy-template.docx',
+            size: '156 KB',
+            duration: '1 hour',
+            language: 'English',
+            tags: ['template', 'business continuity', 'policy']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Business continuity policy',
+      'Business impact analysis',
+      'Risk assessment',
+      'Business continuity plans'
+    ],
+    benefits: [
+      'Enhanced organizational resilience',
+      'Reduced downtime and losses',
+      'Improved stakeholder confidence',
+      'Regulatory compliance'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Business Impact Analysis',
+        description: 'Assess critical business functions and their dependencies',
+        duration: '3-6 weeks',
+        resources: [
+          {
+            id: 'bia-template',
+            title: 'Business Impact Analysis Template',
+            type: 'template',
+            description: 'Template for conducting business impact analysis',
+            url: '/resources/bia-template.xlsx',
+            size: '189 KB',
+            duration: '4 hours',
+            language: 'English',
+            tags: ['template', 'business impact', 'analysis']
+          }
+        ],
+        checklist: [
+          'Identify critical business functions',
+          'Assess dependencies and interdependencies',
+          'Determine recovery time objectives',
+          'Document findings and recommendations'
+        ],
+        tips: [
+          'Involve key stakeholders',
+          'Consider all business functions',
+          'Document assumptions clearly',
+          'Validate findings with management'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Business impact analysis', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Business continuity manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$8,000 - $25,000',
+      auditors: ['Accredited certification bodies', 'Business continuity auditors', 'Technical experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$30,000 - $100,000',
+      certification: '$8,000 - $25,000',
+      maintenance: '$6,000 - $15,000',
+      training: '$5,000 - $10,000',
+      total: '$49,000 - $150,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$30,000 - $100,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$8,000 - $25,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$6,000 - $15,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Business impact analysis', 'Risk assessment', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'nigerian-bank',
+        title: 'Nigerian Bank Enhances Business Continuity',
+        company: 'Lagos Bank Ltd',
+        country: 'Nigeria',
+        sector: 'Finance',
+        isoStandard: 'ISO 22301',
+        challenge: 'The bank faced risks from cyber attacks and natural disasters.',
+        solution: 'Implemented ISO 22301 business continuity management system.',
+        results: [
+          'Reduced downtime by 80%',
+          'Improved recovery time from 72 hours to 4 hours',
+          'Enhanced customer confidence',
+          'Achieved regulatory compliance'
+        ],
+        lessons: [
+          'Regular testing is essential',
+          'Stakeholder engagement is crucial',
+          'Technology redundancy is key',
+          'Continuous improvement drives success'
+        ],
+        contact: 'info@lagosbank.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-22301-guide',
+        title: 'ISO 22301 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 22301',
+        url: '/resources/iso-22301-implementation-guide.pdf',
+        size: '3.4 MB',
+        duration: '3.5 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'business continuity']
+      }
+    ],
+    tags: ['business continuity', 'disaster recovery', 'resilience'],
+    difficulty: 'Advanced',
+    popularity: 1234,
+    africanContext: {
+      relevance: 'ISO 22301 is crucial for African businesses facing various risks.',
+      challenges: [
+        'Limited expertise in business continuity',
+        'Resource constraints',
+        'Infrastructure challenges'
+      ],
+      opportunities: [
+        'Enhanced resilience',
+        'Improved stakeholder confidence',
+        'Regulatory compliance'
+      ],
+      successStories: [
+        'South African banks improving resilience',
+        'Kenyan telecom companies reducing downtime'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Business continuity associations'
+      ]
+    },
+    lastUpdated: '2024-01-15'
+  },
+  {
+    id: 'iso-37001',
+    code: 'ISO 37001',
+    name: 'Anti-Bribery Management Systems',
+    fullName: 'ISO 37001:2016 - Anti-bribery management systems — Requirements with guidance for use',
+    version: '2016',
+    year: 2016,
+    category: isoCategories[5],
+    sector: [sectors[0], sectors[1], sectors[2], sectors[3], sectors[4], sectors[5], sectors[6], sectors[7], sectors[8], sectors[9]],
+    description: 'ISO 37001 is the international standard for anti-bribery management systems.',
+    overview: 'ISO 37001 helps organizations prevent, detect, and respond to bribery.',
+    purpose: 'To provide organizations with a framework for anti-bribery management.',
+    scope: 'This International Standard specifies requirements for an anti-bribery management system.',
+    keyPrinciples: [
+      'Anti-bribery policy',
+      'Risk assessment',
+      'Due diligence',
+      'Financial controls',
+      'Reporting and investigation',
+      'Training and awareness'
+    ],
+    sections: [
+      {
+        id: 'anti-bribery-policy',
+        title: 'Anti-Bribery Policy & Risk Assessment',
+        description: 'Establishing anti-bribery policy and conducting risk assessment.',
+        requirements: [
+          'Develop anti-bribery policy',
+          'Conduct bribery risk assessment',
+          'Implement due diligence procedures',
+          'Establish financial controls'
+        ],
+        implementation: [
+          'Conduct bribery risk assessment',
+          'Identify high-risk areas',
+          'Establish anti-bribery policy',
+          'Implement controls'
+        ],
+        benefits: [
+          'Reduced bribery risk',
+          'Enhanced reputation',
+          'Regulatory compliance',
+          'Stakeholder confidence'
+        ],
+        challenges: [
+          'Identifying all bribery risks',
+          'Balancing business and compliance',
+          'Ensuring policy effectiveness',
+          'Maintaining awareness'
+        ],
+        examples: [
+          'Example 1: Anti-bribery policy development',
+          'Example 2: Risk assessment process',
+          'Example 3: Due diligence procedures',
+          'Example 4: Control implementation'
+        ],
+        resources: [
+          {
+            id: 'anti-bribery-policy-template',
+            title: 'Anti-Bribery Policy Template',
+            type: 'template',
+            description: 'Template for anti-bribery policy development',
+            url: '/resources/anti-bribery-policy-template.docx',
+            size: '162 KB',
+            duration: '1.5 hours',
+            language: 'English',
+            tags: ['template', 'anti-bribery', 'policy']
+          }
+        ]
+      }
+    ],
+    requirements: [
+      'Anti-bribery policy',
+      'Bribery risk assessment',
+      'Due diligence procedures',
+      'Financial controls'
+    ],
+    benefits: [
+      'Reduced bribery risk',
+      'Enhanced reputation',
+      'Regulatory compliance',
+      'Stakeholder confidence'
+    ],
+    implementation: [
+      {
+        id: 'step-1',
+        title: 'Bribery Risk Assessment',
+        description: 'Assess bribery risks and vulnerabilities',
+        duration: '2-4 weeks',
+        resources: [
+          {
+            id: 'bribery-risk-template',
+            title: 'Bribery Risk Assessment Template',
+            type: 'template',
+            description: 'Template for conducting bribery risk assessment',
+            url: '/resources/bribery-risk-template.xlsx',
+            size: '178 KB',
+            duration: '3 hours',
+            language: 'English',
+            tags: ['template', 'bribery', 'risk assessment']
+          }
+        ],
+        checklist: [
+          'Review current anti-bribery practices',
+          'Identify bribery risks and vulnerabilities',
+          'Assess compliance with regulations',
+          'Document findings and recommendations'
+        ],
+        tips: [
+          'Involve legal experts',
+          'Consider all business relationships',
+          'Document risk factors clearly',
+          'Engage stakeholders'
+        ]
+      }
+    ],
+    certification: {
+      process: ['Bribery risk assessment', 'Documentation', 'Implementation', 'Internal audit', 'Management review', 'Certification audit'],
+      requirements: ['Anti-bribery manual', 'Procedures', 'Records', 'Management commitment'],
+      duration: '6-12 months',
+      cost: '$10,000 - $30,000',
+      auditors: ['Accredited certification bodies', 'Anti-bribery auditors', 'Legal experts'],
+      validity: '3 years',
+      renewal: 'Recertification audit every 3 years'
+    },
+    cost: {
+      implementation: '$40,000 - $120,000',
+      certification: '$10,000 - $30,000',
+      maintenance: '$8,000 - $20,000',
+      training: '$6,000 - $12,000',
+      total: '$64,000 - $182,000',
+      breakdown: [
+        {
+          item: 'Implementation',
+          cost: '$40,000 - $120,000',
+          description: 'Initial implementation costs'
+        },
+        {
+          item: 'Certification',
+          cost: '$10,000 - $30,000',
+          description: 'Certification audit costs'
+        },
+        {
+          item: 'Maintenance',
+          cost: '$8,000 - $20,000',
+          description: 'Ongoing maintenance costs'
+        }
+      ]
+    },
+    timeline: {
+      total: '6-12 months',
+      phases: [
+        {
+          phase: 'Planning',
+          duration: '1-2 months',
+          activities: ['Bribery risk assessment', 'Policy development', 'Planning']
+        },
+        {
+          phase: 'Implementation',
+          duration: '4-8 months',
+          activities: ['System implementation', 'Documentation', 'Training']
+        },
+        {
+          phase: 'Certification',
+          duration: '1-2 months',
+          activities: ['Internal audit', 'Management review', 'Certification audit']
+        }
+      ]
+    },
+    caseStudies: [
+      {
+        id: 'kenyan-construction',
+        title: 'Kenyan Construction Company Implements Anti-Bribery System',
+        company: 'Nairobi Construction Ltd',
+        country: 'Kenya',
+        sector: 'Construction',
+        isoStandard: 'ISO 37001',
+        challenge: 'The company faced bribery risks in government contracts.',
+        solution: 'Implemented ISO 37001 anti-bribery management system.',
+        results: [
+          'Reduced bribery incidents by 90%',
+          'Enhanced reputation and trust',
+          'Improved contract success rate',
+          'Achieved regulatory compliance'
+        ],
+        lessons: [
+          'Strong leadership commitment is essential',
+          'Regular training is crucial',
+          'Clear policies drive compliance',
+          'Monitoring and reporting are key'
+        ],
+        contact: 'info@nairobiconstruction.com'
+      }
+    ],
+    resources: [
+      {
+        id: 'iso-37001-guide',
+        title: 'ISO 37001 Implementation Guide',
+        type: 'guide',
+        description: 'Comprehensive step-by-step guide for implementing ISO 37001',
+        url: '/resources/iso-37001-implementation-guide.pdf',
+        size: '3.2 MB',
+        duration: '3 hours',
+        language: 'English',
+        tags: ['implementation', 'guide', 'anti-bribery']
+      }
+    ],
+    tags: ['anti-bribery', 'compliance', 'ethics'],
+    difficulty: 'Advanced',
+    popularity: 987,
+    africanContext: {
+      relevance: 'ISO 37001 is essential for African businesses to combat corruption.',
+      challenges: [
+        'Cultural resistance to change',
+        'Limited legal expertise',
+        'Resource constraints'
+      ],
+      opportunities: [
+        'Enhanced reputation',
+        'Improved business relationships',
+        'Regulatory compliance'
+      ],
+      successStories: [
+        'Nigerian oil companies improving compliance',
+        'Ghanaian mining firms reducing corruption risks'
+      ],
+      localResources: [],
+      regionalPartners: [
+        'African Organization for Standardization (ARSO)',
+        'Anti-corruption agencies'
+      ]
+    },
+    lastUpdated: '2024-01-15'
   }
 ];
 
