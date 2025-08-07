@@ -5,8 +5,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
-  ClockIcon,
-  ChatBubbleLeftRightIcon
+  ClockIcon
 } from '@heroicons/react/24/outline';
 
 const ContactPage: React.FC = () => {

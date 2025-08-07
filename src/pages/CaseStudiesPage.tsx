@@ -3,12 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
-  BookOpenIcon,
   ArrowRightIcon,
   MapPinIcon,
   BuildingOfficeIcon,
-  TrophyIcon,
-  ChartBarIcon
+  TrophyIcon
 } from '@heroicons/react/24/outline';
 
 const CaseStudiesPage: React.FC = () => {

@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
   ClipboardDocumentListIcon,
-  ArrowRightIcon,
   ArrowDownTrayIcon,
-  DocumentIcon,
   CheckCircleIcon,
   StarIcon
 } from '@heroicons/react/24/outline';

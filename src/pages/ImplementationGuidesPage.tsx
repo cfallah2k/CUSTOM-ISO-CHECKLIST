@@ -7,7 +7,6 @@ import {
   ArrowRightIcon,
   ArrowDownTrayIcon,
   ClockIcon,
-  UserGroupIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
 

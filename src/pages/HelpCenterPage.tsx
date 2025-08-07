@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { 
   QuestionMarkCircleIcon,
   ChevronDownIcon,
   ChevronUpIcon,
   MagnifyingGlassIcon,
-  ChatBubbleLeftRightIcon,
   BookOpenIcon,
   PhoneIcon,
   EnvelopeIcon
@@ -68,7 +66,7 @@ const HelpCenterPage: React.FC = () => {
     {
       title: 'Implementation Guide',
       description: 'Step-by-step guidance for implementing ISO standards',
-      icon: ChatBubbleLeftRightIcon,
+      icon: ChevronDownIcon,
       articles: 15
     },
     {
@@ -222,7 +220,7 @@ const HelpCenterPage: React.FC = () => {
               <p className="text-xs opacity-75">Mon-Fri, 9AM-5PM WAT</p>
             </div>
             <div className="flex flex-col items-center">
-              <ChatBubbleLeftRightIcon className="h-8 w-8 mb-2" />
+              <ChevronDownIcon className="h-8 w-8 mb-2" />
               <h3 className="font-semibold mb-1">Live Chat</h3>
               <p className="text-sm opacity-90">Available on platform</p>
               <p className="text-xs opacity-75">Real-time assistance</p>

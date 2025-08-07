@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { 
   AcademicCapIcon,
   PlayIcon,
-  DocumentTextIcon,
   UserGroupIcon,
   ClockIcon,
   StarIcon,
