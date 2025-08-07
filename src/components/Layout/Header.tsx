@@ -20,6 +20,7 @@ const Header: React.FC = () => {
     { name: 'Standards', href: '/standards' },
     { name: 'Sectors', href: '/sectors' },
     { name: 'Assessment', href: '/assessment' },
+    { name: 'AI', href: '/ai' },
     { name: 'Resources', href: '/resources' },
   ];
 
@@ -44,7 +45,7 @@ const Header: React.FC = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg flex items-center justify-center">
               <GlobeAltIcon className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">AU ISO Assessment</span>
+            <span className="text-xl font-bold text-gray-900">StandardAccess</span>
           </Link>
 
           {/* Desktop Navigation */}

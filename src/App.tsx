@@ -15,6 +15,7 @@ import StandardsPage from './pages/StandardsPage';
 import StandardDetailPage from './pages/StandardDetailPage';
 import SectorsPage from './pages/SectorsPage';
 import AssessmentPage from './pages/AssessmentPage';
+import AIPage from './pages/AIPage';
 import ResourcesPage from './pages/ResourcesPage';
 
 
@@ -150,6 +151,7 @@ function App() {
                         <Route path="/standards/:id" element={<StandardDetailPage />} />
                         <Route path="/sectors" element={<SectorsPage />} />
                         <Route path="/assessment" element={<AssessmentPage />} />
+                        <Route path="/ai" element={<AIPage />} />
                         <Route path="/resources" element={<ResourcesPage />} />
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "au-iso-assessment-platform",
+  "name": "standardaccess",
   "version": "1.0.0",
-  "description": "African Union ISO Assessment Platform",
+  "description": "StandardAccess - AI-Powered ISO Guidance Tool for MSMEs",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.17",
