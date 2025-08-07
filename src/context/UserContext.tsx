@@ -9,6 +9,11 @@ export interface UserProfile {
   experience: string;
   goals: string[];
   challenges: string[];
+  companyMaturity?: string;
+  annualRevenue?: string;
+  businessProcesses?: string[];
+  currentSystems?: string[];
+  additionalInfo?: string;
   email?: string;
   phone?: string;
   country?: string;
@@ -16,13 +21,27 @@ export interface UserProfile {
 
 export interface AssessmentResult {
   standard: string;
-  score: number;
+  overallScore: number;
+  categoryScores: {
+    awareness: number;
+    readiness: number;
+    resources: number;
+    risk: number;
+    implementation: number;
+    sectorAlignment: number;
+  };
   recommendations: string[];
   nextSteps: string[];
   timeline: string;
   cost: string;
-  priority: 'High' | 'Medium' | 'Low';
+  priority: string;
   matchScore: number;
+  riskLevel: 'Low' | 'Medium' | 'High' | 'Critical';
+  implementationComplexity: 'Simple' | 'Moderate' | 'Complex' | 'Very Complex';
+  estimatedROI: string;
+  criticalSuccessFactors: string[];
+  potentialChallenges: string[];
+  sectorSpecificInsights: string[];
 }
 
 interface UserContextType {

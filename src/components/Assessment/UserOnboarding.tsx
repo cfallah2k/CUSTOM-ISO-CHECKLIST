@@ -3,8 +3,11 @@ import { motion } from 'framer-motion';
 import { 
   UserIcon, 
   GlobeAltIcon,
+  BuildingOfficeIcon,
   ArrowRightIcon,
-  ArrowLeftIcon
+  ArrowLeftIcon,
+  CheckCircleIcon,
+  ExclamationTriangleIcon
 } from '@heroicons/react/24/outline';
 import { UserProfile } from '../../context/UserContext';
 import { sectors } from '../../data/sectors';
@@ -39,6 +42,23 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
     'Expert (10+ years)'
   ];
 
+  const companyMaturityLevels = [
+    'Startup/New (0-2 years)',
+    'Growing (3-5 years)',
+    'Established (6-10 years)',
+    'Mature (10+ years)'
+  ];
+
+  const annualRevenueRanges = [
+    'Under $100K',
+    '$100K - $500K',
+    '$500K - $1M',
+    '$1M - $5M',
+    '$5M - $10M',
+    '$10M - $50M',
+    '$50M+'
+  ];
+
   const commonGoals = [
     'Improve quality management',
     'Enhance environmental performance',
@@ -49,7 +69,15 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
     'Meet regulatory requirements',
     'Improve customer satisfaction',
     'Enhance supply chain management',
-    'Implement energy efficiency'
+    'Implement energy efficiency',
+    'Achieve competitive advantage',
+    'Improve process efficiency',
+    'Reduce waste and defects',
+    'Enhance brand reputation',
+    'Meet customer requirements',
+    'Improve employee engagement',
+    'Reduce compliance risks',
+    'Optimize resource utilization'
   ];
 
   const commonChallenges = [
@@ -62,7 +90,49 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
     'Supply chain coordination',
     'Technology limitations',
     'Stakeholder alignment',
-    'Measuring ROI'
+    'Measuring ROI',
+    'Documentation management',
+    'Training and skill gaps',
+    'Process standardization',
+    'Data management',
+    'Audit preparation',
+    'Continuous improvement',
+    'Integration with existing systems',
+    'Maintaining compliance'
+  ];
+
+  const businessProcesses = [
+    'Quality Management',
+    'Environmental Management',
+    'Occupational Health & Safety',
+    'Information Security',
+    'Energy Management',
+    'Business Continuity',
+    'Risk Management',
+    'Supply Chain Management',
+    'Customer Service',
+    'Human Resources',
+    'Finance & Accounting',
+    'Research & Development',
+    'Sales & Marketing',
+    'Operations Management',
+    'IT & Technology',
+    'Legal & Compliance'
+  ];
+
+  const currentSystems = [
+    'Manual processes',
+    'Basic spreadsheets',
+    'Simple databases',
+    'ERP system',
+    'Quality management software',
+    'Document management system',
+    'Project management tools',
+    'Customer relationship management',
+    'Supply chain management',
+    'Business intelligence tools',
+    'Cloud-based solutions',
+    'Integrated management system'
   ];
 
   const handleProfileUpdate = (field: keyof UserProfile, value: string | string[]) => {
@@ -76,6 +146,10 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
                userProfile.companySize && userProfile.role && userProfile.experience;
       case 2:
         return userProfile.goals.length > 0;
+      case 3:
+        return userProfile.challenges.length > 0;
+      case 4:
+        return true; // Optional step
       default:
         return true;
     }
@@ -88,7 +162,7 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-2xl mx-auto"
+            className="max-w-3xl mx-auto"
           >
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -162,16 +236,45 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
                 </div>
               </div>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Experience Level *</label>
+                  <select
+                    value={userProfile.experience}
+                    onChange={(e) => handleProfileUpdate('experience', e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  >
+                    <option value="">Select experience level</option>
+                    {experienceLevels.map(level => (
+                      <option key={level} value={level}>{level}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Company Maturity Level</label>
+                  <select
+                    value={userProfile.companyMaturity || ''}
+                    onChange={(e) => handleProfileUpdate('companyMaturity', e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  >
+                    <option value="">Select maturity level</option>
+                    {companyMaturityLevels.map(level => (
+                      <option key={level} value={level}>{level}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Experience Level *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Annual Revenue Range</label>
                 <select
-                  value={userProfile.experience}
-                  onChange={(e) => handleProfileUpdate('experience', e.target.value)}
+                  value={userProfile.annualRevenue || ''}
+                  onChange={(e) => handleProfileUpdate('annualRevenue', e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
                 >
-                  <option value="">Select experience level</option>
-                  {experienceLevels.map(level => (
-                    <option key={level} value={level}>{level}</option>
+                  <option value="">Select revenue range</option>
+                  {annualRevenueRanges.map(range => (
+                    <option key={range} value={range}>{range}</option>
                   ))}
                 </select>
               </div>
@@ -195,14 +298,14 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-2xl mx-auto"
+            className="max-w-3xl mx-auto"
           >
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GlobeAltIcon className="h-8 w-8 text-secondary-600" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Goals & Challenges</h2>
-              <p className="text-gray-600">Select your primary goals and challenges to help us tailor recommendations</p>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Goals & Objectives</h2>
+              <p className="text-gray-600">Select your primary goals to help us tailor ISO recommendations</p>
             </div>
 
             <div className="space-y-6">
@@ -210,7 +313,7 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
                 <label className="block text-sm font-medium text-gray-700 mb-3">What are your primary goals? (Select all that apply)</label>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {commonGoals.map(goal => (
-                    <label key={goal} className="flex items-center space-x-3 cursor-pointer">
+                    <label key={goal} className="flex items-center space-x-3 cursor-pointer p-3 rounded-lg border border-gray-200 hover:bg-gray-50">
                       <input
                         type="checkbox"
                         checked={userProfile.goals.includes(goal)}
@@ -228,12 +331,49 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
                   ))}
                 </div>
               </div>
+            </div>
 
+            <div className="mt-8 flex justify-between">
+              <button
+                onClick={() => setCurrentStep(1)}
+                className="btn-secondary flex items-center space-x-2"
+              >
+                <ArrowLeftIcon className="h-4 w-4" />
+                <span>Back</span>
+              </button>
+              <button
+                onClick={() => setCurrentStep(3)}
+                disabled={!canProceed()}
+                className="btn-primary flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <span>Continue</span>
+                <ArrowRightIcon className="h-4 w-4" />
+              </button>
+            </div>
+          </motion.div>
+        );
+
+      case 3:
+        return (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ExclamationTriangleIcon className="h-8 w-8 text-yellow-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Challenges & Constraints</h2>
+              <p className="text-gray-600">Identify your main challenges to help us provide targeted solutions</p>
+            </div>
+
+            <div className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-3">What are your main challenges? (Select all that apply)</label>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {commonChallenges.map(challenge => (
-                    <label key={challenge} className="flex items-center space-x-3 cursor-pointer">
+                    <label key={challenge} className="flex items-center space-x-3 cursor-pointer p-3 rounded-lg border border-gray-200 hover:bg-gray-50">
                       <input
                         type="checkbox"
                         checked={userProfile.challenges.includes(challenge)}
@@ -255,7 +395,103 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
 
             <div className="mt-8 flex justify-between">
               <button
-                onClick={() => setCurrentStep(1)}
+                onClick={() => setCurrentStep(2)}
+                className="btn-secondary flex items-center space-x-2"
+              >
+                <ArrowLeftIcon className="h-4 w-4" />
+                <span>Back</span>
+              </button>
+              <button
+                onClick={() => setCurrentStep(4)}
+                disabled={!canProceed()}
+                className="btn-primary flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <span>Continue</span>
+                <ArrowRightIcon className="h-4 w-4" />
+              </button>
+            </div>
+          </motion.div>
+        );
+
+      case 4:
+        return (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BuildingOfficeIcon className="h-8 w-8 text-blue-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Business Processes & Systems</h2>
+              <p className="text-gray-600">Tell us about your current business processes and systems (Optional)</p>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-3">Which business processes do you currently manage? (Select all that apply)</label>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {businessProcesses.map(process => (
+                    <label key={process} className="flex items-center space-x-3 cursor-pointer p-3 rounded-lg border border-gray-200 hover:bg-gray-50">
+                      <input
+                        type="checkbox"
+                        checked={(userProfile.businessProcesses || []).includes(process)}
+                        onChange={(e) => {
+                          const currentProcesses = userProfile.businessProcesses || [];
+                          if (e.target.checked) {
+                            handleProfileUpdate('businessProcesses', [...currentProcesses, process]);
+                          } else {
+                            handleProfileUpdate('businessProcesses', currentProcesses.filter(p => p !== process));
+                          }
+                        }}
+                        className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                      />
+                      <span className="text-sm text-gray-700">{process}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-3">What systems do you currently use? (Select all that apply)</label>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {currentSystems.map(system => (
+                    <label key={system} className="flex items-center space-x-3 cursor-pointer p-3 rounded-lg border border-gray-200 hover:bg-gray-50">
+                      <input
+                        type="checkbox"
+                        checked={(userProfile.currentSystems || []).includes(system)}
+                        onChange={(e) => {
+                          const currentSystems = userProfile.currentSystems || [];
+                          if (e.target.checked) {
+                            handleProfileUpdate('currentSystems', [...currentSystems, system]);
+                          } else {
+                            handleProfileUpdate('currentSystems', currentSystems.filter(s => s !== system));
+                          }
+                        }}
+                        className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                      />
+                      <span className="text-sm text-gray-700">{system}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Additional Information (Optional)</label>
+                <textarea
+                  value={userProfile.additionalInfo || ''}
+                  onChange={(e) => handleProfileUpdate('additionalInfo', e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  rows={4}
+                  placeholder="Tell us anything else that might be relevant for your ISO implementation..."
+                />
+              </div>
+            </div>
+
+            <div className="mt-8 flex justify-between">
+              <button
+                onClick={() => setCurrentStep(3)}
                 className="btn-secondary flex items-center space-x-2"
               >
                 <ArrowLeftIcon className="h-4 w-4" />
@@ -263,11 +499,10 @@ const UserOnboarding: React.FC<UserOnboardingProps> = ({
               </button>
               <button
                 onClick={onNext}
-                disabled={!canProceed()}
-                className="btn-primary flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn-primary flex items-center space-x-2"
               >
-                <span>Continue</span>
-                <ArrowRightIcon className="h-4 w-4" />
+                <span>Complete Profile</span>
+                <CheckCircleIcon className="h-4 w-4" />
               </button>
             </div>
           </motion.div>
