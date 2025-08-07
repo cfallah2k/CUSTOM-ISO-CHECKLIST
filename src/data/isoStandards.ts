@@ -290,7 +290,7 @@ export const isoStandards: ISOStandard[] = [
         ]
       }
     ],
-    requirements: [
+        requirements: [
       'Quality policy',
       'Quality objectives',
       'Process approach',
@@ -301,8 +301,8 @@ export const isoStandards: ISOStandard[] = [
       'Enhanced efficiency',
       'Better process control',
       'Increased competitiveness'
-    ],
-    implementation: [
+        ],
+        implementation: [
       {
         id: 'step-1',
         title: 'Gap Analysis',
@@ -429,7 +429,7 @@ export const isoStandards: ISOStandard[] = [
     popularity: 3247,
     africanContext: {
       relevance: 'ISO 9001 is highly relevant for African businesses seeking to improve quality.',
-      challenges: [
+        challenges: [
         'Limited resources for implementation',
         'Lack of qualified consultants',
         'Resistance to change'
@@ -522,7 +522,7 @@ export const isoStandards: ISOStandard[] = [
         ]
       }
     ],
-    requirements: [
+        requirements: [
       'Environmental policy',
       'Environmental aspects identification',
       'Legal compliance',
@@ -533,8 +533,8 @@ export const isoStandards: ISOStandard[] = [
       'Compliance with regulations',
       'Cost savings through efficiency',
       'Enhanced reputation'
-    ],
-    implementation: [
+        ],
+        implementation: [
       {
         id: 'step-1',
         title: 'Environmental Review',
@@ -663,7 +663,7 @@ export const isoStandards: ISOStandard[] = [
     popularity: 2156,
     africanContext: {
       relevance: 'ISO 14001 is crucial for African businesses facing environmental challenges.',
-      challenges: [
+        challenges: [
         'Limited environmental expertise',
         'Regulatory complexity',
         'Resource constraints'
@@ -1412,7 +1412,7 @@ export const isoStandards: ISOStandard[] = [
         id: 'anti-bribery-policy',
         title: 'Anti-Bribery Policy & Risk Assessment',
         description: 'Establishing anti-bribery policy and conducting risk assessment.',
-        requirements: [
+      requirements: [
           'Develop anti-bribery policy',
           'Conduct bribery risk assessment',
           'Implement due diligence procedures',
@@ -2387,12 +2387,12 @@ export const isoStandards: ISOStandard[] = [
           {
             id: 'risk-framework-template',
             title: 'Risk Management Framework Template',
-            type: 'template',
+        type: 'template',
             description: 'Template for risk management framework development',
             url: '/resources/risk-framework-template.docx',
             size: '168 KB',
             duration: '2 hours',
-            language: 'English',
+        language: 'English',
             tags: ['template', 'risk management', 'framework']
           }
         ]
@@ -2425,7 +2425,7 @@ export const isoStandards: ISOStandard[] = [
             url: '/resources/risk-assessment-template.xlsx',
             size: '195 KB',
             duration: '4 hours',
-            language: 'English',
+        language: 'English',
             tags: ['template', 'risk', 'assessment']
           }
         ],
@@ -2767,12 +2767,12 @@ export const isoStandards: ISOStandard[] = [
       {
         id: 'iso-27002-guide',
         title: 'ISO/IEC 27002 Implementation Guide',
-        type: 'guide',
+          type: 'guide',
         description: 'Comprehensive step-by-step guide for implementing ISO/IEC 27002',
         url: '/resources/iso-27002-implementation-guide.pdf',
         size: '3.8 MB',
         duration: '4.5 hours',
-        language: 'English',
+          language: 'English',
         tags: ['implementation', 'guide', 'information security controls']
       }
     ],
@@ -2803,6 +2803,6 @@ export const isoStandards: ISOStandard[] = [
     },
     lastUpdated: '2024-01-15'
   }
-];
+]; 
 
 export default isoStandards;

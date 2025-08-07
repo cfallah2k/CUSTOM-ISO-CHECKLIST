@@ -58,12 +58,12 @@ const Footer: React.FC = () => {
           >
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">AU</span>
+                <span className="text-white font-bold text-lg">SA</span>
               </div>
-              <span className="text-xl font-bold">ISO Assessment</span>
+              <span className="text-xl font-bold">StandardAccess</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Empowering African organizations with comprehensive ISO standards assessment and implementation guidance across all sectors.
+              AI-Powered ISO Guidance Tool for MSMEs - Empowering African organizations with comprehensive ISO standards assessment and implementation guidance.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
@@ -154,7 +154,7 @@ const Footer: React.FC = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 African Union ISO Assessment Platform. All rights reserved.
+              © 2024 StandardAccess - AI-Powered ISO Guidance Tool for MSMEs. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <span>Made with ❤️ for Africa</span>

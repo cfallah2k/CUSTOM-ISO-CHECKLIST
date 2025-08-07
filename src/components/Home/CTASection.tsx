@@ -134,7 +134,7 @@ const CTASection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/resources"
-                className="btn-primary bg-white text-primary-600 hover:bg-gray-100"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 Explore Resources
                 <ArrowRightIcon className="ml-2 h-5 w-5" />

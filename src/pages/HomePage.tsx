@@ -9,7 +9,6 @@ import {
 } from '@heroicons/react/24/outline';
 import HeroSection from '../components/Home/HeroSection';
 import FeaturesSection from '../components/Home/FeaturesSection';
-import StatisticsSection from '../components/Home/StatisticsSection';
 import CTASection from '../components/Home/CTASection';
 
 const HomePage: React.FC = () => {
@@ -51,9 +50,6 @@ const HomePage: React.FC = () => {
 
           {/* Features Section */}
           <FeaturesSection />
-
-          {/* Statistics Section */}
-          <StatisticsSection />
 
           {/* How It Works Section */}
           <section className="section-padding bg-white">

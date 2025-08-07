@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from 'react-hot-toast';
 
@@ -17,8 +17,14 @@ import SectorsPage from './pages/SectorsPage';
 import AssessmentPage from './pages/AssessmentPage';
 import AIPage from './pages/AIPage';
 import ResourcesPage from './pages/ResourcesPage';
-
-
+import ImplementationGuidesPage from './pages/ImplementationGuidesPage';
+import CaseStudiesPage from './pages/CaseStudiesPage';
+import TemplatesPage from './pages/TemplatesPage';
+import TrainingMaterialsPage from './pages/TrainingMaterialsPage';
+import HelpCenterPage from './pages/HelpCenterPage';
+import ContactPage from './pages/ContactPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 // Context
@@ -153,6 +159,14 @@ function App() {
                         <Route path="/assessment" element={<AssessmentPage />} />
                         <Route path="/ai" element={<AIPage />} />
                         <Route path="/resources" element={<ResourcesPage />} />
+                        <Route path="/implementation-guides" element={<ImplementationGuidesPage />} />
+                        <Route path="/case-studies" element={<CaseStudiesPage />} />
+                        <Route path="/templates" element={<TemplatesPage />} />
+                        <Route path="/training-materials" element={<TrainingMaterialsPage />} />
+                        <Route path="/help-center" element={<HelpCenterPage />} />
+                        <Route path="/contact" element={<ContactPage />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+                        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
 
 
                         <Route path="*" element={<NotFoundPage />} />
