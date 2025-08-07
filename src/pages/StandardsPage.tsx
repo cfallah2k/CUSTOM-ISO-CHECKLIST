@@ -6,7 +6,6 @@ import {
   MagnifyingGlassIcon,
   BookOpenIcon,
   ShieldCheckIcon,
-  AcademicCapIcon,
   LightBulbIcon,
   ChartBarIcon,
   ClockIcon,
@@ -14,7 +13,6 @@ import {
   CheckCircleIcon,
   StarIcon,
   GlobeAltIcon,
-  ArrowTrendingUpIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline';
 import { isoStandards, isoCategories } from '../data/isoStandards';

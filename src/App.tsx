@@ -13,6 +13,7 @@ import Footer from './components/Layout/Footer';
 import HomePage from './pages/HomePage';
 import StandardsPage from './pages/StandardsPage';
 import StandardDetailPage from './pages/StandardDetailPage';
+import SectorDetailPage from './pages/SectorDetailPage';
 import SectorsPage from './pages/SectorsPage';
 import AssessmentPage from './pages/AssessmentPage';
 import AIPage from './pages/AIPage';
@@ -156,19 +157,18 @@ function App() {
                         <Route path="/standards" element={<StandardsPage />} />
                         <Route path="/standards/:id" element={<StandardDetailPage />} />
                         <Route path="/sectors" element={<SectorsPage />} />
+                        <Route path="/sectors/:id" element={<SectorDetailPage />} />
                         <Route path="/assessment" element={<AssessmentPage />} />
                         <Route path="/ai" element={<AIPage />} />
                         <Route path="/resources" element={<ResourcesPage />} />
-                        <Route path="/implementation-guides" element={<ImplementationGuidesPage />} />
-                        <Route path="/case-studies" element={<CaseStudiesPage />} />
-                        <Route path="/templates" element={<TemplatesPage />} />
-                        <Route path="/training-materials" element={<TrainingMaterialsPage />} />
-                        <Route path="/help-center" element={<HelpCenterPage />} />
+                        <Route path="/resources/guides" element={<ImplementationGuidesPage />} />
+                        <Route path="/resources/case-studies" element={<CaseStudiesPage />} />
+                        <Route path="/resources/templates" element={<TemplatesPage />} />
+                        <Route path="/resources/training" element={<TrainingMaterialsPage />} />
+                        <Route path="/help" element={<HelpCenterPage />} />
                         <Route path="/contact" element={<ContactPage />} />
-                        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-                        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-
-
+                        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+                        <Route path="/terms" element={<TermsOfServicePage />} />
                         <Route path="*" element={<NotFoundPage />} />
                       </Routes>
                     </main>
